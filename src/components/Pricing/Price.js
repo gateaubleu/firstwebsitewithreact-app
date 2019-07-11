@@ -1,6 +1,6 @@
 import React from 'react';
 import {PRICES_NAME} from "../../config/Config";
-import main from '../../assets/img/try.png';
+import main from '../../assets/img/connector.jpg';
 import BgContainer from "../BgContainer";
 
 function Price() {
@@ -9,9 +9,9 @@ function Price() {
 
             <BgContainer backgroundImage={main}/>
 
-            <div id="price-content" className="container">
-                <h1 style={{textTransform: 'uppercase'}}>Who said that buying balls is expensive?</h1>
-                <p>Notre cheat est de bonne qualité, mais nous savons que personne ne veux se ruiner pour pouvoir activer à tous moment, donc nos prix sont assez bas par apport à la concurrence.</p>
+            <div id="price-content" className="content container">
+                <h1 style={{textTransform: 'uppercase', fontWeight: 'bold'}}>Who said that buying balls is expensive ?</h1>
+                <p className="description">Our cheat is of good quality, but we know that no one wants to ruin himself to be able to activate at any time, so our prices are quite low compared to the other cheats.</p>
 
                 <div className="row justify-content-around">
                     <div className="col-md-3 price">
@@ -19,7 +19,7 @@ function Price() {
                             <h2>NOVA</h2>
                         </div>
 
-                        <ul>
+                        <ul className="ul-custom">
                             <li>1 month access</li>
                             <li>All features</li>
                             <li>Slotted build</li>
@@ -35,7 +35,7 @@ function Price() {
                             <h2>EAGLE</h2>
                         </div>
 
-                        <ul>
+                        <ul className="ul-custom">
                             <li>3 month access</li>
                             <li>All features</li>
                             <li>Slotted build</li>
@@ -51,7 +51,7 @@ function Price() {
                             <h2>GLOBAL</h2>
                         </div>
 
-                        <ul>
+                        <ul className="ul-custom">
                             <li>Lifetime access</li>
                             <li>All features</li>
                             <li>Slotted build</li>
@@ -63,9 +63,9 @@ function Price() {
                         </div>
                     </div>
                 </div>
+                <p>Buying from us is very simple and it only takes a few seconds, click on one of our offers, you will be redirected to our shop, then simply enter your code in the "Activation of my subscriptions" section.</p>
             </div>
         </div>
-
     );
 }
 

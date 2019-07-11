@@ -4,6 +4,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    color: white !important;
+}
+
+a:hover{
+    color: #c8c8c8 !important;
+}
+
+body{
+    line-height: 1.0 !important;
+}
+
+section{
+   width: 100%;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -19,15 +35,8 @@ header .navbar{
     font-family: 'Montserrat', sans-serif;
 }
 
-header .navbar #logo-container{
-    position: relative;
-}
-
-header .navbar #logo{
-    position: absolute;
-    left:0%;
-    top:71%;
-    width: 80px;
+header .navbar-brand img{
+    width:50%;
 }
 
 header .nav-item .nav-link{
@@ -43,7 +52,7 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
     position: relative;
 }
 
-#home #bg-home{
+.bg-container .bg{
     z-index: -3;
 }
 
@@ -54,16 +63,21 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
     z-index: 5;
 }
 
-#home #bg-home, .top-border-img{
+.bg-container .bg, .top-border-img{
     vertical-align: top;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
-#home #home-content, #price #price-content{
+.content{
     width: 100%;
     min-height: 150px;
-    margin-top: 20px;
+    margin-top: 35px;
+    margin-bottom: 90px;
+}
+
+#price .description{
+    margin-bottom: 35px;
 }
 
 #price #price-content .price{
@@ -92,15 +106,43 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
     font-weight: bold;
 }
 
-#price #price-content ul{
+ul.ul-custom{
     list-style: none;
     padding-inline-start: 0;
     text-align: center;
 }
 
+
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto{
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+footer{
+    margin-top: -50px;
+    color: #a2a2a2;
+    background-color: #1d1d1d;
+    padding-bottom: 20px;
+    width: 100%;
+    z-index: -3;
+}
+
+footer #footer-decor{
+    width: 100%;
+}
+
+footer #footer-content{
+    padding-top: 15px;
+}
+
+footer #footer-content #logo{
+    width: 50%;
+    margin-bottom: 15px;
+    background-color: #1d1d1d;
+}
+
+footer #footer-content .icon{
+    margin-left: 25px;
 }
 
 @media (max-width: 992px){
@@ -109,13 +151,23 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
         width:100%;
     }
     header {
-        background: rgba(21, 21, 21, 0.93) url(assets/img/header-line.png) no-repeat 50% 100%;
-    }
-    #home #bg-home{
-        margin-top: 69px;
+        background: rgba(21, 21, 21, 0.98) url(assets/img/header-line.png) no-repeat 50% 100%;
     }
     .navbar-toggler{
         font-size: 16px !important;
+    }
+
+    .bg-container{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 20px !important;
+    }
+    h2{
+        font-size: 19px !important;
     }
 }
 
