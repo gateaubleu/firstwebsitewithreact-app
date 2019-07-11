@@ -1,33 +1,122 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.8) url(assets/img/header-line.png) no-repeat 50% 100%;
+    padding: 10px 0 11px;
+    z-index: 10;
+}
+header .navbar{
+    padding: 10px;
+    width:50%;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header .navbar #logo-container{
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+header .navbar #logo{
+    position: absolute;
+    left:0%;
+    top:71%;
+    width: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header .nav-item .nav-link{
+    text-transform: uppercase;
+    color: white !important;
 }
+
+header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
+    color: #c8c8c8 !important;
+}
+
+.bg-container{
+    position: relative;
+}
+
+#home #bg-home{
+    z-index: -3;
+}
+
+.bg-container .top-border-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+}
+
+#home #bg-home, .top-border-img{
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+#home #home-content, #price #price-content{
+    width: 100%;
+    min-height: 150px;
+    margin-top: 20px;
+}
+
+#price #price-content .price{
+    box-shadow: 0 5px 15px 0 rgba(204, 204, 204, 0.8);
+    margin-bottom: 15px;
+}
+
+#price #price-content .price .title{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.82);
+    width: 100%;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#price #price-content .price .title h2{
+    font-size: 20px;
+}
+
+#price #price-content .price .text-price{
+    background: #f6f6f6;
+    padding: 3px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#price #price-content ul{
+    list-style: none;
+    padding-inline-start: 0;
+    text-align: center;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+@media (max-width: 992px){
+    header .navbar{
+        padding: 5px;
+        width:100%;
+    }
+    header {
+        background: rgba(21, 21, 21, 0.93) url(assets/img/header-line.png) no-repeat 50% 100%;
+    }
+    #home #bg-home{
+        margin-top: 69px;
+    }
+    .navbar-toggler{
+        font-size: 16px !important;
+    }
+}
+
+
