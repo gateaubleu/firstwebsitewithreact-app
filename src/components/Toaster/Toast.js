@@ -12,11 +12,7 @@ class Toast extends React.Component{
 
     componentDidMount() {
         const {toast} = this.props;
-        this.timeout = setTimeout(() => this.removeToast(toast.id), TOAST_TIMEOUT);
-    }
-
-    componentWillUnmount() {
-        clearTimeout(this.timeout);
+        setTimeout(() => this.removeToast(toast.id), TOAST_TIMEOUT);
     }
 
     render() {
@@ -35,9 +31,17 @@ class Toast extends React.Component{
         }
 
         return(
-            <div onClick={(e) => this.removeToast(toast.id)} className={"toast toast-" + toast.type}>
+            <div onClick={e => this.removeToast(toast.id)} className={"toast toast-" + toast.type}>
                 <div className="toast-body">
-                    <p><FontAwesomeIcon icon={iconToast}/> {toast.content}</p>
+                    <div className="row">
+                        <div className="col-2">
+                            <FontAwesomeIcon className="d-block mx-auto" icon={iconToast}/>
+                        </div>
+                        <div className="col-10">
+                            <p>{toast.content}</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         );

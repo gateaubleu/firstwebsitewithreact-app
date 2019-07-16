@@ -40,6 +40,9 @@ class App extends React.Component{
                                     <li className="nav-item">
                                         <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Login</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to={APP_ROUTES['REGISTER']}>Register</Link>
+                                    </li>
 
                                 </ul>
                             </div>

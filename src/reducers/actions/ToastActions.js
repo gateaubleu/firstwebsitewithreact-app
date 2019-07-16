@@ -2,6 +2,7 @@ import uniqid from 'uniqid';
 
 export const ADD_TOAST = 'ADD_TOAST';
 export const REMOVE_TOAST = 'REMOVE_TOAST';
+export const CLEAR_TOASTS = 'CLEAR_TOASTS';
 
 export function addToast(type, content){
     return{
@@ -21,4 +22,11 @@ export function removeToast(id){
             id: id
         }
     }
+}
+
+export function clearToasts(){
+    return {
+        type: CLEAR_TOASTS,
+        payload: null
+    };
 }

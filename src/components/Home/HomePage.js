@@ -3,7 +3,7 @@ import main from '../../assets/img/try.png';
 import provideGround from '../../assets/img/provide.png';
 import BgContainer from "../BgContainer";
 
-function Home (){
+function HomePage (){
     return (
         <div id="home">
           <BgContainer backgroundImage={main} />
@@ -20,4 +20,4 @@ function Home (){
     );
 }
 
-export default Home;
+export default HomePage;

@@ -1,4 +1,4 @@
-import {ADD_TOAST, REMOVE_TOAST} from "./actions/ToastActions";
+import {ADD_TOAST, CLEAR_TOASTS, REMOVE_TOAST} from "./actions/ToastActions";
 
 function toastReducer(state = [], action) {
     console.log(action);
@@ -8,6 +8,8 @@ function toastReducer(state = [], action) {
         case REMOVE_TOAST:
             let filteredState = [...state];
             return filteredState.filter(toast => toast.id !== action.payload.id);
+        case CLEAR_TOASTS:
+            return [];
         default:
             return state
     }

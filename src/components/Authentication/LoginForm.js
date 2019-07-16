@@ -1,29 +1,33 @@
 import React from 'react';
-import {API_ROUTES} from "../../config/Config";
+import {API_ROUTES, RECAPTCHA_KEY} from "../../config/Config";
 import {connect} from "react-redux";
-import {addToast} from "../../reducers/actions/ToastActions";
+import {addToast, clearToasts} from "../../reducers/actions/ToastActions";
 import {TOAST_ENUM} from "../Toaster/ToastEnum";
+import Recaptcha from "react-recaptcha";
 
 class LoginForm extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             username: '',
-            password: ''
+            password: '',
+            captcha: '',
         };
-
+        this.captchaInstance = null;
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleSubmit(e){
         e.preventDefault();
+        this.props.clearToasts();
 
         this.props.addToast(TOAST_ENUM['ERROR'], 'Wrong credentials.');
+        //clear
     }
 
     render() {
         return(
-            <form className="w-50 d-block mx-auto" onSubmit={e => this.handleSubmit(e)} action={API_ROUTES['LOGIN']}>
+            <form className="col-md-6 col-lg-5 d-block mx-auto" onSubmit={e => this.handleSubmit(e)} action={API_ROUTES['LOGIN']}>
 
                 <h2 className="text-center font-weight-bold">Login to your member area.</h2>
 
@@ -36,6 +40,11 @@ class LoginForm extends React.Component{
                     <label htmlFor="passwordLogin">Password:</label>
                     <input type="password" className="d-block form-control" required id="passwordLogin" onChange={e => this.setState({password: e.target.value})} value={this.state.password} placeholder="Password..."/>
                 </div>
+
+                <div className="text-center">
+                    <Recaptcha sitekey={RECAPTCHA_KEY} ref={e => this.captchaInstance = e} verifyCallback={e => this.setState({captcha: e})} />
+                </div>
+
 
                 <button type="submit" className="mt-5 d-block mx-auto btn btn-danger">Sign In</button>
             </form>
@@ -51,6 +60,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         addToast: (type, content) => {
             dispatch(addToast(type, content))
+        },
+        clearToasts: () =>{
+            dispatch(clearToasts());
         }
     }
 };

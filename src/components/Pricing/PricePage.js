@@ -3,7 +3,7 @@ import {PRICES_NAME} from "../../config/Config";
 import main from '../../assets/img/connector.jpg';
 import BgContainer from "../BgContainer";
 
-function Price() {
+function PricePage() {
     return (
         <div id="price">
 
@@ -69,4 +69,4 @@ function Price() {
     );
 }
 
-export default Price;
+export default PricePage;

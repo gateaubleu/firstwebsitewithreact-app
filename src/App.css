@@ -12,6 +12,10 @@ a:hover{
     color: #c8c8c8 !important;
 }
 
+.g-recaptcha{
+    display: inline-block;
+}
+
 .toast-container{
     position:fixed;
     z-index: 9999999;
@@ -23,9 +27,11 @@ a:hover{
     opacity: .9;
     color:white;
     box-shadow: 0 0 12px #222730;
-    width: 300px;
     border-radius: 3px;
     cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
 }
 
 .toast-container .toast:hover{
@@ -35,12 +41,13 @@ a:hover{
 .toast-container .toast .toast-body svg{
     font-size: 20px !important;
     margin-right: 3px;
+    justify-content: center;
 }
 
 .toast-container .toast .toast-body p{
     font-family: "Roboto", sans-serif;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 2px;
 }
 
 .toast-container .toast.toast-error{
@@ -111,8 +118,8 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
 .content{
     width: 100%;
     min-height: 150px;
-    margin-top: 35px;
-    margin-bottom: 90px;
+    margin-top: 80px;
+    margin-bottom: 120px;
 }
 
 #price .description{

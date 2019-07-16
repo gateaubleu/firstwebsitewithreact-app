@@ -3,7 +3,7 @@ import BgContainer from "../BgContainer";
 import mirage from '../../assets/img/mirage.jpg';
 import LoginForm from "./LoginForm";
 
-function Login(){
+function LoginPage(){
     return(
         <div id="login">
             <BgContainer backgroundImage={mirage} />
@@ -15,4 +15,4 @@ function Login(){
     );
 }
 
-export default Login;
+export default LoginPage;
