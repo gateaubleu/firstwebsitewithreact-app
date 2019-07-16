@@ -22,9 +22,14 @@ a:hover{
 .toast-container .toast{
     opacity: .9;
     color:white;
-    box-shadow: 0 0 12px #999;
+    box-shadow: 0 0 12px #222730;
     width: 300px;
     border-radius: 3px;
+    cursor: pointer;
+}
+
+.toast-container .toast:hover{
+    opacity: .95;
 }
 
 .toast-container .toast .toast-body svg{
