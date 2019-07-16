@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Montserrat&display=swap');
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -10,6 +10,40 @@ a{
 
 a:hover{
     color: #c8c8c8 !important;
+}
+
+.toast-container{
+    position:fixed;
+    z-index: 9999999;
+    top:80px;
+    right: 20px;
+}
+
+.toast-container .toast{
+    opacity: .9;
+    color:white;
+    box-shadow: 0 0 12px #999;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.toast-container .toast .toast-body svg{
+    font-size: 20px !important;
+    margin-right: 3px;
+}
+
+.toast-container .toast .toast-body p{
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.toast-container .toast.toast-error{
+    background-color: #BD362F;
+}
+
+.toast-container .toast.toast-success{
+    background-color: #51A351;
 }
 
 body{

@@ -8,7 +8,7 @@ function Login(){
         <div id="login">
             <BgContainer backgroundImage={mirage} />
 
-            <div id="login-content" className="content container">
+            <div id="login-content" style={{marginTop: '80px', paddingBottom: '80px'}} className="content container">
                 <LoginForm />
             </div>
         </div>

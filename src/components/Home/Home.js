@@ -13,7 +13,7 @@ function Home (){
                 <p>Notre cheat est de bonne qualité, mais nous savons que personne ne veux se ruiner pour pouvoir activer à tous moment, donc nos prix sont assez bas par apport à la concurrence.</p>
 
 
-                <img className="img-fluid" src={provideGround} alt=""/>
+                <img className="img-fluid mx-auto d-block" src={provideGround} alt=""/>
 
             </div>
         </div>

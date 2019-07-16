@@ -1,5 +1,7 @@
 export const API_URL = "http://127.0.0.1:8000/";
 
+export const TOAST_TIMEOUT = 5000;
+
 export const DISCORD_LINK = "http://google.fr";
 export const STEAM_LINK = "http://google.fr";
 

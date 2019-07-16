@@ -3,8 +3,20 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+import {combineReducers, createStore} from "redux";
+import {Provider} from 'react-redux';
+import toastReducer from './reducers/ToastReducer';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(combineReducers({
+    toasts: toastReducer
+}),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+
+ReactDOM.render(
+<Provider store={store}>
+    <App />
+</Provider>, document.getElementById('root'));
+
+window.store = store;
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -5,6 +5,7 @@ import AppRouter from './AppRouter';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {APP_ROUTES} from "./config/Config";
 import Footer from './components/Footer';
+import ToastList from "./components/Toaster/ToastsList";
 
 class App extends React.Component{
 
@@ -45,6 +46,8 @@ class App extends React.Component{
                         </nav>
                     </header>
                     <section>
+                        <ToastList/>
+
                         <AppRouter authenticated={false}/>
                     </section>
 
