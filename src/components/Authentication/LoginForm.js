@@ -1,9 +1,10 @@
 import React from 'react';
-import {API_ROUTES, RECAPTCHA_KEY} from "../../config/Config";
+import {API_ROUTES, APP_ROUTES, RECAPTCHA_KEY} from "../../config/Config";
 import {connect} from "react-redux";
 import {addToast, clearToasts} from "../../reducers/actions/ToastActions";
 import {TOAST_ENUM} from "../Toaster/ToastEnum";
 import Recaptcha from "react-recaptcha";
+import {Link} from "react-router-dom";
 
 class LoginForm extends React.Component{
     constructor(props){
@@ -42,11 +43,18 @@ class LoginForm extends React.Component{
                 </div>
 
                 <div className="text-center">
-                    <Recaptcha sitekey={RECAPTCHA_KEY} ref={e => this.captchaInstance = e} verifyCallback={e => this.setState({captcha: e})} />
+                    <Recaptcha sitekey={RECAPTCHA_KEY}
+                               render="explicit"
+                               hl={"en"}
+                               onloadCallback={e => console.clear()}
+                               ref={e => this.captchaInstance = e}
+                               verifyCallback={e => this.setState({captcha: e})} />
                 </div>
 
 
                 <button type="submit" className="mt-5 d-block mx-auto btn btn-danger">Sign In</button>
+
+                <p className="text-center small mt-2">You haven't acccount ? Go <Link className="link" to={APP_ROUTES['REGISTER']}>here</Link>.</p>
             </form>
         );
     }

@@ -8,11 +8,19 @@ a{
     color: white !important;
 }
 
+.link{
+    color: red !important;
+}
+
+.link:hover{
+    color: darkred !important;
+}
+
 a:hover{
     color: #c8c8c8 !important;
 }
 
-.g-recaptcha{
+.g-recaptcha, #g-recaptcha{
     display: inline-block;
 }
 

@@ -1,4 +1,4 @@
-export const API_URL = "http://127.0.0.1:8000/";
+export const API_URL = "http://127.0.0.1:8000/api";
 export const TOAST_TIMEOUT = 5000;
 export const RECAPTCHA_KEY = "6LdT660UAAAAADHo9cAZ9YZ2wZqhbjkTugdRuu9_";
 export const DISCORD_LINK = "http://google.fr";
@@ -14,9 +14,9 @@ export const APP_ROUTES = {
 };
 
 export const API_ROUTES = {
-    LOGIN: "login",
-    REGISTER: "register",
-    ACCOUNT_INFORMATIONS: "account"
+    LOGIN: "/login",
+    REGISTER: "/signup",
+    ACCOUNT_INFORMATIONS: "/account"
 };
 
 export const PRICES_NAME = {
