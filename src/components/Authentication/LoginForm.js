@@ -66,7 +66,6 @@ class LoginForm extends React.Component{
                 recaptcha: this.state.captcha
             }).then(response => {
                 let data = response.data;
-                console.log(data);
 
                 switch(data.code) {
                     case 200:

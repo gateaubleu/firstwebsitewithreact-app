@@ -4,7 +4,6 @@ function accountReducer(state = [], action){
     switch(action.type){
         case SET_ACCOUNT:
             return action.payload;
-            break;
         case REMOVE_ACCOUNT:
             return [];
         default:

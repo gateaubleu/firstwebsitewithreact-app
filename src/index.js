@@ -7,6 +7,7 @@ import {combineReducers, createStore} from "redux";
 import {Provider} from 'react-redux';
 import toastReducer from './reducers/ToastReducer';
 import accountReducer from "./reducers/AccountReducer";
+import {BrowserRouter as Router} from 'react-router-dom';
 
 const store = createStore(combineReducers({
     toasts: toastReducer,
@@ -15,7 +16,9 @@ const store = createStore(combineReducers({
 
 ReactDOM.render(
 <Provider store={store}>
-    <App />
+    <Router>
+        <App />
+    </Router>
 </Provider>, document.getElementById('root'));
 
 window.store = store;
