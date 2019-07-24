@@ -6,9 +6,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {combineReducers, createStore} from "redux";
 import {Provider} from 'react-redux';
 import toastReducer from './reducers/ToastReducer';
+import accountReducer from "./reducers/AccountReducer";
 
 const store = createStore(combineReducers({
-    toasts: toastReducer
+    toasts: toastReducer,
+    account: accountReducer
 }),window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(

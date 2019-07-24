@@ -85,12 +85,12 @@ header {
 }
 header .navbar{
     padding: 10px;
-    width:50%;
+    width:60%;
     font-family: 'Montserrat', sans-serif;
 }
 
 header .navbar-brand img{
-    width:50%;
+    width:120px;
 }
 
 header .nav-item .nav-link{

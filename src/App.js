@@ -6,6 +6,11 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 import {APP_ROUTES} from "./config/Config";
 import Footer from './components/Footer';
 import ToastList from "./components/Toaster/ToastsList";
+import {connect} from "react-redux";
+import AccountManagement from "./components/Authentication/AccountManagement";
+import {removeAccount} from "./reducers/actions/AccountActions";
+import {addToast} from "./reducers/actions/ToastActions";
+import {TOAST_ENUM} from "./components/Toaster/ToastEnum";
 
 class App extends React.Component{
 
@@ -16,10 +21,17 @@ class App extends React.Component{
         };
     }
 
+    onLogout(){
+        this.props.addToast(TOAST_ENUM['SUCCESS'], 'You have been successfully disconnected.');
+        localStorage.clear();
+        this.props.removeAccount();
+    }
+
     render(){
     const {account} = this.props;
         return (
             <Router>
+                <AccountManagement />
                 <div className="App">
                     <header>
                         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent mx-auto">
@@ -38,12 +50,11 @@ class App extends React.Component{
                                         <Link className="nav-link" to={APP_ROUTES['PRICES']}>Pricing</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Login</Link>
+                                        {account.length !== 0 ? <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Member Area</Link> : <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Login</Link>}
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to={APP_ROUTES['REGISTER']}>Register</Link>
+                                        {account.length !== 0 ? <Link className="nav-link" onClick={e => this.onLogout()} to={APP_ROUTES['LOGIN']}>Logout</Link> : <Link className="nav-link" to={APP_ROUTES['REGISTER']}>Register</Link>}
                                     </li>
-
                                 </ul>
                             </div>
                         </nav>
@@ -51,7 +62,7 @@ class App extends React.Component{
                     <section>
                         <ToastList/>
 
-                        <AppRouter authenticated={false}/>
+                        <AppRouter authenticated={account.length !== 0}/>
                     </section>
 
                     <Footer logo={logo}/>
@@ -62,4 +73,21 @@ class App extends React.Component{
     }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        account: state.account
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addToast: (type, content) => {
+            dispatch(addToast(type, content))
+        },
+        removeAccount: () => {
+            dispatch(removeAccount());
+        }
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

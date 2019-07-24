@@ -10,6 +10,7 @@ const NotFound = () => {
     return <p>Tous les chemins ne ménent pas toujours à <Link to={APP_ROUTES['HOME']}>Rome</Link>.</p>
 };
 
+
 function AppRouter({authenticated}) {
     return (
         <Switch>

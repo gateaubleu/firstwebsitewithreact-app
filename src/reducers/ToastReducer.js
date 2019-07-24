@@ -1,7 +1,6 @@
 import {ADD_TOAST, CLEAR_TOASTS, REMOVE_TOAST} from "./actions/ToastActions";
 
 function toastReducer(state = [], action) {
-    console.log(action);
     switch (action.type) {
         case ADD_TOAST:
             return [...state, action.payload];
