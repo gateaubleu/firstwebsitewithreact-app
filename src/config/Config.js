@@ -11,7 +11,10 @@ export const APP_ROUTES = {
     LOGIN: "/signin",
     REGISTER: "/register",
     LOGOUT: "/signout",
-    CONFIG: "/config"
+    PANEL_HOME: "/panel/",
+    PANEL_CONFIG: "/panel/config",
+    PANEL_SUBSCRIPTION: "/panel/subscription",
+    PANEL_INFORMATIONS: "/panel/informations"
 };
 
 export const API_ROUTES = {

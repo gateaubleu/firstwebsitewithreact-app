@@ -27,7 +27,7 @@ function MainPage({account, logo, onLogout}){
                             </li>
                             <li className="nav-item">
                                 {account.length !== 0 ?
-                                    <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Member Area</Link> :
+                                    <Link className="nav-link" to={APP_ROUTES['PANEL_HOME']}>Member Area</Link> :
                                     <Link className="nav-link" to={APP_ROUTES['LOGIN']}>Login</Link>}
                             </li>
                             <li className="nav-item">

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+.sidebar {
+    background-color: #181818;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1001;
+    width: 240px;
+    padding-top: 0px;
+    min-height: 100vh;
+    height: 100%;
+    transition: 0.05s ease-in;
+}
+
+.sidebar .sidebar-brand {
+    margin-top: 25px;
+}
+
+.sidebar .sidebar-brand .small-icon{
+    display: none;
+    width: 35px;
+}
+
+.sidebar .sidebar-brand .icon{
+    display: block;
+}
+
+.sidebar .sidebar-brand img{
+    width: 180px;
+}
+
+.sidebar .nav-link .nav-text{
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #a0a0a0 !important;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.sidebar .nav-link .nav-text:hover{
+    color: #626262 !important;
+}
+
+.sidebar .separator{
+    width: 75%;
+    text-align: center;
+    border-top-color: #c8c8c8 !important;
+}
+
+.sidebar ul svg{
+    color: white !important;
+    margin-right: 5px;
+}
+
+.content-container{
+    background-color: rgb(241, 242, 247);
+    min-height: 100vh;
+    height: 100%;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+.content-container .top-content{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.content-container .top-content .profile{
+    margin-right: 15px;
+}
+
+.content-container .top-content .profile .profile-pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.content-container .top-content .profile p{
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.topbar-divider{
+    border: 0;
+    margin: 0;
+    height: 20px;
+    border-right: 1px solid black !important;
+}
+
+@media (max-width: 1000px){
+    .sidebar {
+        width: 50px;
+    }
+    .nav-text{
+        display: none;
+    }
+
+    .sidebar ul svg{
+        margin-bottom: 15px;
+    }
+
+    .sidebar ul svg:hover{
+        color: #a0a0a0 !important;
+    }
+
+    .sidebar .sidebar-brand .small-icon{
+        display: block;
+    }
+
+    .sidebar .sidebar-brand .icon{
+        display: none;
+    }
+}
