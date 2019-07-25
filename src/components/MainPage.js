@@ -4,7 +4,6 @@ import ToastList from "./Toaster/ToastsList";
 import AppRouter from "../AppRouter";
 import Footer from "./Footer";
 import {APP_ROUTES} from "../config/Config";
-import {TOAST_ENUM} from "./Toaster/ToastEnum";
 
 function MainPage({account, logo, onLogout}){
     return(

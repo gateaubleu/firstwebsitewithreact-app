@@ -33,7 +33,7 @@ class App extends React.Component {
                 <AccountManagement />
                 {!this.props.location.pathname.startsWith("/panel/") ?
                     <MainPage account={this.props.account} onLogout={this.onLogout.bind(this)} logo={logo} /> :
-                    <PanelPage logo={logo}/>
+                    <PanelPage account={this.props.account} onLogout={this.onLogout.bind(this)} logo={logo}/>
                 }
             </div>
         );

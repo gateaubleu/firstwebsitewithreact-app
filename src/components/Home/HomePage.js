@@ -10,8 +10,7 @@ function HomePage (){
 
             <div id="home-content" className="content container">
                 <h1 style={{textTransform: 'uppercase', fontWeight: 'bold'}}>What we provide</h1>
-                <p>Notre cheat est de bonne qualité, mais nous savons que personne ne veux se ruiner pour pouvoir activer à tous moment, donc nos prix sont assez bas par apport à la concurrence.</p>
-
+                <p>Our cheat is external, and made for legit player, Cheap, safe with a lot of humanized features, stay under the radar and never get vac banned again, come with us and grab some balls.</p>
 
                 <img className="img-fluid mx-auto d-block" src={provideGround} alt=""/>
 

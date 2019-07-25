@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
+#panel-page{
+    min-height: 100vh;
+}
+
+.card{
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
 .sidebar {
     background-color: #181818;
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     z-index: 1001;
     width: 240px;
     padding-top: 0px;
-    min-height: 100vh;
-    height: 100%;
+    min-height: 100%;
     transition: 0.05s ease-in;
 }
 
@@ -54,8 +66,7 @@
 
 .content-container{
     background-color: rgb(241, 242, 247);
-    min-height: 100vh;
-    height: 100%;
+    min-height: 100%;
     padding: 0px;
     margin: 0;
     width: 100%;
@@ -92,12 +103,66 @@
     border-right: 1px solid black !important;
 }
 
+.breadcrumb{
+    background-color: rgb(241, 242, 247) !important;
+}
+
+.breadcrumb h1{
+    font-size: 20px;
+}
+
+.content-container #home .user-informations{
+    width: 75%;
+    margin: auto;
+}
+
+.content-container #home .user-informations .profile-pic{
+    width: 25%;
+}
+
+.content-container #home .user-informations .profile-pic img{
+    border: 1px solid black;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.content-container #home .user-informations .informations{
+    width: 75%;
+}
+
+.content-container #home .user-informations .informations{
+    width: 50%;
+}
+
+.content-container #home .user-informations .informations #username{
+    font-size: 25px;
+}
+
+.content-container #home .user-informations .informations li{
+    margin-bottom: 10px;
+}
+
+.progress{
+    border: 1px solid lightgray;
+}
+.text-green{
+    color: green !important;
+}
+
 @media (max-width: 1000px){
     .sidebar {
         width: 50px;
     }
     .nav-text{
         display: none;
+    }
+
+    .content-container #home .user-informations .profile-pic img{
+        width: 80px;
+        height: 80px;
+        margin-top: 15px;
     }
 
     .sidebar ul svg{

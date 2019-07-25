@@ -16,7 +16,7 @@ function PricePage() {
                 <div className="row justify-content-around">
                     <div className="col-md-3 price">
                         <div className="title">
-                            <h2>NOVA</h2>
+                            <h2>ONE BALL</h2>
                         </div>
 
                         <ul className="ul-custom">
@@ -32,7 +32,7 @@ function PricePage() {
                     </div>
                     <div className="col-md-3 price">
                         <div className="title">
-                            <h2>EAGLE</h2>
+                            <h2>TWO BALLS</h2>
                         </div>
 
                         <ul className="ul-custom">
@@ -48,7 +48,7 @@ function PricePage() {
                     </div>
                     <div className="col-md-3 price">
                         <div className="title">
-                            <h2>GLOBAL</h2>
+                            <h2>BIG BALLS</h2>
                         </div>
 
                         <ul className="ul-custom">

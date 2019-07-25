@@ -5,6 +5,19 @@ export const DISCORD_LINK = "http://google.fr";
 export const STEAM_LINK = "http://google.fr";
 export const PREFIX_LOCALSTORE = "467d4RoPjW65_";
 
+export const STATUT = "Never";
+export const RELEASE_DATE = "15/05/2018";
+export const UPDATE_DATE = "25/07/2019";
+
+export const ANTICHEATS = [
+    "VAC",
+    "SMAC",
+    "CEVO",
+    "PopFlash",
+    "PvPro (No tournament)",
+    "FaceIt (Server-side)"
+];
+
 export const APP_ROUTES = {
     HOME: "/",
     PRICES: "/prices",
@@ -12,7 +25,8 @@ export const APP_ROUTES = {
     REGISTER: "/register",
     LOGOUT: "/signout",
     PANEL_HOME: "/panel/",
-    PANEL_CONFIG: "/panel/config",
+    PANEL_CONFIGURATION: "/panel/config",
+    PANEL_DOWNLOAD: "/panel/download",
     PANEL_SUBSCRIPTION: "/panel/subscription",
     PANEL_INFORMATIONS: "/panel/informations"
 };
