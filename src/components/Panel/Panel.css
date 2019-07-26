@@ -6,6 +6,7 @@ body{
 
 #panel-page{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .card{
@@ -144,8 +145,27 @@ body{
     margin-bottom: 10px;
 }
 
+.content-container #download .card{
+    background-color: #343a40;
+    color:white;
+}
+
+.content-container #download .card .card-body{
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.content-container #download .features-list{
+    margin-left: 15px;
+}
+
+.content-container #download .btn-dark{
+    background-color: #262b30;
+}
+
 .progress{
     border: 1px solid lightgray;
+    width: 70%;
 }
 .text-green{
     color: green !important;
@@ -179,5 +199,17 @@ body{
 
     .sidebar .sidebar-brand .icon{
         display: none;
+    }
+
+    .content-container #home .user-informations .informations li{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px){
+    .content-container #home .user-informations .profile-pic img{
+        width: 50px;
+        height: 50px;
+        margin-top: 15px;
     }
 }

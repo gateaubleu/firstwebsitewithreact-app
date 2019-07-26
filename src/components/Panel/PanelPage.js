@@ -43,13 +43,13 @@ function PanelPage({account, onLogout, logo}) {
                             <img src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg"
                                  className="profile-pic" alt=""/>
                             <p>{account.username}</p>
-                            <a className="text-black-50" onClick={e => onLogout()} href="#"><FontAwesomeIcon
-                                icon={faSignOutAlt}/></a>
+                            <Link className="text-black-50" to="" onClick={e => onLogout()}><FontAwesomeIcon
+                                icon={faSignOutAlt}/></Link>
                         </div>
                     </div>
                 </div>
                 <ToastList/>
-                <PanelRouter authenticated={account.length !== 0}/>
+                <PanelRouter account={account}/>
             </div>
         </div>
     );
