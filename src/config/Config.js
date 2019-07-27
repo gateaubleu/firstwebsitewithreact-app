@@ -37,7 +37,8 @@ export const API_ROUTES = {
     LOGIN: "/signin",
     REGISTER: "/signup",
     ACCOUNT_INFORMATIONS: "/account",
-    AUTH_TOKEN: "/auth/token"
+    AUTH_TOKEN: "/auth/token",
+    DOWNLOAD_BUILD: "/panel/get/build/"
 };
 
 export const PRICES_NAME = {

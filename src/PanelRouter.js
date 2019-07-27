@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import {APP_ROUTES} from "./config/Config";
 import HomePage from "./components/Panel/Home/HomePage";
 import DownloadPage from "./components/Panel/Download/DownloadPage";
 
+
+/**
+ * If user is authenticated
+ * @param account
+ * @returns {*}
+ */
+const authenticatedRoute = (account) => {
+    return (
+        <Fragment>
+            <Route exact path={APP_ROUTES['PANEL_HOME']} render={p => <HomePage {...p} account={account} /> } />
+            <Route exact path={APP_ROUTES['PANEL_DOWNLOAD']} render={p => <DownloadPage {...p} account={account} /> } />
+        </Fragment>
+    );
+};
+
+
+
 function PanelRouter({account}){
     return(
         <Switch>
-            <Route exact path={APP_ROUTES['PANEL_HOME']} render={p => <HomePage {...p} account={account} /> } />
-            <Route exact path={APP_ROUTES['PANEL_DOWNLOAD']} render={p => <DownloadPage {...p} account={account} /> } />
+            { account.length !== 0 ? authenticatedRoute(account) : null }
         </Switch>
     );
 }
