@@ -38,11 +38,18 @@ export const API_ROUTES = {
     REGISTER: "/signup",
     ACCOUNT_INFORMATIONS: "/account",
     AUTH_TOKEN: "/auth/token",
-    DOWNLOAD_BUILD: "/panel/get/build/"
+    DOWNLOAD_BUILD: "/panel/get/build/",
+    SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription"
 };
 
-export const PRICES_NAME = {
+export const PRICES_SUBSCRIPTIONS = {
     ONE: "5 €",
     THREE: "13 €",
     LIFETIME: "30 €"
+};
+
+export const SELLY_LINK = {
+    ONE: "https://takeurballs.selly.store/product/10d5f523",
+    THREE: "https://takeurballs.selly.store/product/8e94a14e",
+    LIFETIME: ""
 };

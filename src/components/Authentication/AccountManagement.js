@@ -22,8 +22,8 @@ class AccountManagement extends React.Component{
                     this.props.removeAccount();
                 }
                 else{
-                    //reconnection
-                    if(this.props.account.length === 0){
+                    // reconnection / update
+                    //if(this.props.account.length === 0){
                         axios.get(API_URL + API_ROUTES['AUTH_TOKEN'], {
                             headers: {'Authorization': "bearer " + localStorage.getItem(PREFIX_LOCALSTORE + 'token')}
                         }).then(
@@ -32,7 +32,7 @@ class AccountManagement extends React.Component{
                                 this.props.setAccount(data.username, data.roles, localStorage.getItem(PREFIX_LOCALSTORE + 'token'));
                             }
                         );
-                    }
+                   // }
                 }
             }
         }

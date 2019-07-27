@@ -1,5 +1,5 @@
 import React from 'react';
-import {PRICES_NAME} from "../../config/Config";
+import {PRICES_SUBSCRIPTIONS} from "../../config/Config";
 import main from '../../assets/img/connector.jpg';
 import BgContainer from "../BgContainer";
 
@@ -27,7 +27,7 @@ function PricePage() {
                         </ul>
 
                         <div className="text-price">
-                            {PRICES_NAME['ONE']}
+                            {PRICES_SUBSCRIPTIONS['ONE']}
                         </div>
                     </div>
                     <div className="col-md-3 price">
@@ -43,7 +43,7 @@ function PricePage() {
                         </ul>
 
                         <div className="text-price">
-                            {PRICES_NAME['THREE']}
+                            {PRICES_SUBSCRIPTIONS['THREE']}
                         </div>
                     </div>
                     <div className="col-md-3 price">
@@ -59,7 +59,7 @@ function PricePage() {
                         </ul>
 
                         <div className="text-price">
-                            {PRICES_NAME['LIFETIME']}
+                            {PRICES_SUBSCRIPTIONS['LIFETIME']}
                         </div>
                     </div>
                 </div>

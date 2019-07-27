@@ -150,7 +150,7 @@ body{
     color:white;
 }
 
-.content-container #download .card .card-body{
+.content-container #download .card .card-body, .content-container #subscription .card .card-body{
     padding: 0;
     padding-bottom: 15px;
 }
@@ -162,6 +162,26 @@ body{
 .content-container #download .btn-dark{
     background-color: #262b30;
 }
+
+.content-container #subscription table th{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.content-container #subscription table td{
+    font-size: 13px;
+}
+
+.content-container #subscription table td .btn{
+    font-size: 13px;
+}
+
+.content-container #subscription .avertissement{
+    padding: 5px;
+    padding-left: 15px;
+    text-align: center;
+}
+
 
 .progress{
     border: 1px solid lightgray;
