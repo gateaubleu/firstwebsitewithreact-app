@@ -39,7 +39,9 @@ export const API_ROUTES = {
     ACCOUNT_INFORMATIONS: "/account",
     AUTH_TOKEN: "/auth/token",
     DOWNLOAD_BUILD: "/panel/get/build/",
-    SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription"
+    SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription",
+    SAVE_CONFIGURATION_AIMBOT: "/panel/save/aimbot",
+    GET_CONFIGURATION_AIMBOT: "/panel/get/aimbot"
 };
 
 export const PRICES_SUBSCRIPTIONS = {

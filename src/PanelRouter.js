@@ -4,6 +4,7 @@ import {APP_ROUTES} from "./config/Config";
 import HomePage from "./components/Panel/Home/HomePage";
 import DownloadPage from "./components/Panel/Download/DownloadPage";
 import SubscriptionPage from "./components/Panel/Subscription/SubscriptionPage";
+import ConfigurationPage from "./components/Panel/Configuration/ConfigurationPage";
 
 
 /**
@@ -17,6 +18,7 @@ const authenticatedRoute = (account) => {
             <Route exact path={APP_ROUTES['PANEL_HOME']} render={p => <HomePage {...p} account={account} /> } />
             <Route exact path={APP_ROUTES['PANEL_DOWNLOAD']} render={p => <DownloadPage {...p} account={account} /> } />
             <Route exact path={APP_ROUTES['PANEL_SUBSCRIPTION']} render={p => <SubscriptionPage {...p} account={account} /> } />
+            <Route exact path={APP_ROUTES['PANEL_CONFIGURATION']} render={p => <ConfigurationPage {...p} account={account} /> } />
         </Fragment>
     );
 };

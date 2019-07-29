@@ -10,6 +10,7 @@ import {connect} from "react-redux";
 import {addToast} from "../../../reducers/actions/ToastActions";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
 import uniqid from 'uniqid';
+import {CUSTOMER} from "../../Authentication/RoleEnum";
 
 class DownloadPage extends React.Component{
 
@@ -55,7 +56,7 @@ class DownloadPage extends React.Component{
         const {account} = this.props;
 
         let premium = false;
-        if (account.length !== 0 && account.roles.indexOf("ROLE_CUSTOMER") !== -1) {
+        if (account.length !== 0 && account.roles.indexOf(CUSTOMER) !== -1) {
             premium = true;
         }
 

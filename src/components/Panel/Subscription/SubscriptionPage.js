@@ -51,7 +51,7 @@ function SubscriptionPage({account}) {
 
                             <div className="avertissement">
                                 <p>The activation code will be received by email, with a guide to start with the cheat.</p>
-                                <p>The </p>
+                                <p>If you would like pay via Paysafecard, please contact support team on Discord.</p>
                                 <small><span style={{color: 'darkred', fontWeight: 'bold'}}>* </span> You must be a old customer (1 month min) for buy a lifetime build.</small>
                             </div>
 

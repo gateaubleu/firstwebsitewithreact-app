@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Nunito&display=swap');
 body{
     overflow-x: hidden;
 }
@@ -9,9 +8,26 @@ body{
     overflow-x: hidden;
 }
 
+.text-blue{
+    color: #41478b !important;
+    font-weight: bold;
+}
+
 .card{
     -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+}
+
+.btn-xs{
+    padding: 1px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    border-radius: 3px !important;
+}
+
+.btn-danger:disabled{
+    background-color: gray !important;
+    border-color: darkgray !important;
 }
 
 .sidebar {
@@ -145,6 +161,41 @@ body{
     margin-bottom: 10px;
 }
 
+.content-container .card .card-header, .content-container .card .card-body{
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.content-container .card .card-header{
+    background-color: #f8f9fc !important;
+    border-bottom: 1px solid #e3e6f0;
+    font-size: 18px;
+}
+
+.content-container #configuration .card .card-body{
+    color: #858796;
+}
+
+.content-container #configuration .card .card-header p{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.content-container #configuration .card .card-header a{
+    color: #343a40 !important;
+    font-size: 14px;
+}
+
+.content-container #configuration .card .card-header a:hover{
+    color: #616a75 !important;
+}
+
+.content-container #download .card .card-header{
+    background-color: #343a40 !important;
+    border-bottom: 1px solid #36414c;
+}
+
 .content-container #download .card{
     background-color: #343a40;
     color:white;
@@ -157,6 +208,7 @@ body{
 
 .content-container #download .features-list{
     margin-left: 15px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .content-container #download .btn-dark{

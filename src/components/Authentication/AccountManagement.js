@@ -23,16 +23,14 @@ class AccountManagement extends React.Component{
                 }
                 else{
                     // reconnection / update
-                    //if(this.props.account.length === 0){
-                        axios.get(API_URL + API_ROUTES['AUTH_TOKEN'], {
-                            headers: {'Authorization': "bearer " + localStorage.getItem(PREFIX_LOCALSTORE + 'token')}
-                        }).then(
-                            (response) => {
-                                let data = response.data;
-                                this.props.setAccount(data.username, data.roles, localStorage.getItem(PREFIX_LOCALSTORE + 'token'));
-                            }
-                        );
-                   // }
+                    axios.get(API_URL + API_ROUTES['AUTH_TOKEN'], {
+                        headers: {'Authorization': "bearer " + localStorage.getItem(PREFIX_LOCALSTORE + 'token')}
+                    }).then(
+                        (response) => {
+                            let data = response.data;
+                            this.props.setAccount(data.username, data.roles, localStorage.getItem(PREFIX_LOCALSTORE + 'token'));
+                        }
+                    );
                 }
             }
         }
@@ -41,6 +39,7 @@ class AccountManagement extends React.Component{
 
     componentDidMount() {
         this.checkAccountAuthentication();
+        //ici faire un truc pour dire qu'on a été check si un compte existait et donc ne pas pouvoir accéder au panel (Store, avec un truc du genre "
         this.interval = setInterval(() => { this.checkAccountAuthentication() }, 5000);
     }
 
