@@ -6,6 +6,7 @@ import AimbotConfigurationForm from "./AimbotConfigurationForm";
 import {connect} from "react-redux";
 import {addToast} from "../../../reducers/actions/ToastActions";
 import VisualConfigurationForm from "./VisualConfigurationForm";
+import MiscConfigurationForm from "./MiscConfigurationForm";
 
 function ConfigurationPage({account, addToast}){
     return(
@@ -26,12 +27,7 @@ function ConfigurationPage({account, addToast}){
                 </div>
 
                 <div className="col-10 col-sm-5 mb-5">
-                    <div className="card">
-                        <div className="card-header text-center">
-                            Misc
-                        </div>
-                        <div className="card-body"></div>
-                    </div>
+                    <MiscConfigurationForm addToast={addToast} saveIcon={faSave} account={account} />
                 </div>
             </div>
         </div>

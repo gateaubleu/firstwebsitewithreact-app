@@ -137,14 +137,14 @@ class AimbotConfigurationForm extends React.Component{
                             <div className="form-group col-md-5">
                                 <label htmlFor="aimFovX">Fov X</label>
                                 <input type="range" className="form-control-range" value={this.state.aimFovX} min="1" max="50" onChange={e => this.setState({aimFovX: e.target.value})} id="aimFovX"/>
-                                <p className="mb-0">{this.state.aimFovX}/50</p>
-                                <small className="text-center d-block mt-1">Represents the area where the aimbot is effective on the horizontal axis</small>
+                                <p className="range-text mb-0">{this.state.aimFovX}/50</p>
+                                <small className="text-center d-block mt-1">Represent the area where the aimbot is effective on the horizontal axis</small>
                             </div>
                             <div className="form-group col-md-5">
                                 <label htmlFor="aimFovY">Fov Y</label>
                                 <input type="range" className="form-control-range" value={this.state.aimFovY} min="1" max="50" onChange={e => this.setState({aimFovY: e.target.value})} id="aimFovY"/>
-                                <p className="mb-0">{this.state.aimFovY}/50</p>
-                                <small className="text-center d-block mt-1">Represents the area where the aimbot is effective on the vertical axis</small>
+                                <p className="range-text mb-0">{this.state.aimFovY}/50</p>
+                                <small className="text-center d-block mt-1">Represent the area where the aimbot is effective on the vertical axis</small>
                             </div>
                         </div>
 
@@ -152,13 +152,13 @@ class AimbotConfigurationForm extends React.Component{
                             <div className="form-group col-md-5">
                                 <label htmlFor="aimSmoothX">Smooth X</label>
                                 <input type="range" className="form-control-range" value={this.state.aimSmoothX} min="1" max="100" onChange={e => this.setState({aimSmoothX: e.target.value})} id="aimSmoothX"/>
-                                <p className="mb-0">{this.state.aimSmoothX}/100</p>
+                                <p className="range-text mb-0">{this.state.aimSmoothX}/100</p>
                                 <small className="text-center d-block mt-1">Decreases the aggressivity of the aimbot on the horizontal axis</small>
                             </div>
                             <div className="form-group col-md-5">
                                 <label htmlFor="aimSmoothY">Smooth Y</label>
                                 <input type="range" className="form-control-range" value={this.state.aimSmoothY} min="1" max="100" onChange={e => this.setState({aimSmoothY: e.target.value})} id="aimSmoothY"/>
-                                <p className="mb-0">{this.state.aimSmoothY}/100</p>
+                                <p className="range-text mb-0">{this.state.aimSmoothY}/100</p>
                                 <small className="text-center d-block mt-1">Decreases the aggressivity of the aimbot on the vertical axis</small>
                             </div>
                         </div>

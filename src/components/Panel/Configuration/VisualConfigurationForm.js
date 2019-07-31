@@ -170,21 +170,18 @@ class VisualConfigurationForm extends React.Component{
                                 <div className="form-group">
                                     <label htmlFor="visualColorRedEnemy">Red</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorRedEnemy} min="1" max="250" onChange={e => this.setState({visualColorRedEnemy: e.target.value})} id="visualColorRedEnemy"/>
-                                    <p className="mb-0">{this.state.visualColorRedEnemy}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorRedEnemy}/250</p>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="visualColorGreenEnemy">Green</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorGreenEnemy} min="1" max="250" onChange={e => this.setState({visualColorGreenEnemy: e.target.value})} id="visualColorGreenEnemy"/>
-                                    <p className="mb-0">{this.state.visualColorGreenEnemy}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorGreenEnemy}/250</p>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="visualColorBlueEnemy">Blue</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorBlueEnemy} min="1" max="250" onChange={e => this.setState({visualColorBlueEnemy: e.target.value})} id="visualColorBlueEnemy"/>
-                                    <p className="mb-0">{this.state.visualColorBlueEnemy}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorBlueEnemy}/250</p>
                                 </div>
-
-
-
                             </div>
                             <div className="col-md-5">
                                 <p>Color for ally</p>
@@ -193,17 +190,17 @@ class VisualConfigurationForm extends React.Component{
                                 <div className="form-group">
                                     <label htmlFor="visualColorRedAlly">Red</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorRedAlly} min="1" max="250" onChange={e => this.setState({visualColorRedAlly: e.target.value})} id="visualColorRedAlly"/>
-                                    <p className="mb-0">{this.state.visualColorRedAlly}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorRedAlly}/250</p>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="visualColorGreenAlly">Green</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorGreenAlly} min="1" max="250" onChange={e => this.setState({visualColorGreenAlly: e.target.value})} id="visualColorGreenAlly"/>
-                                    <p className="mb-0">{this.state.visualColorGreenAlly}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorGreenAlly}/250</p>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="visualColorBleueAlly">Bleue</label>
+                                    <label htmlFor="visualColorBleueAlly">Blue</label>
                                     <input type="range" className="form-control-range" value={this.state.visualColorBlueAlly} min="1" max="250" onChange={e => this.setState({visualColorBlueAlly: e.target.value})} id="visualColorBlueAlly"/>
-                                    <p className="mb-0">{this.state.visualColorBlueAlly}/250</p>
+                                    <p className="range-text mb-0">{this.state.visualColorBlueAlly}/250</p>
                                 </div>
                             </div>
                         </div>
