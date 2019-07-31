@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCheckCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
+import {faCheckCircle, faInfoCircle, faTimesCircle} from "@fortawesome/free-solid-svg-icons";
 import {TOAST_ENUM} from "./ToastEnum";
 import {TOAST_TIMEOUT} from "../../config/Config";
 
@@ -25,6 +25,9 @@ class Toast extends React.Component{
                 break;
             case TOAST_ENUM['SUCCESS']:
                 iconToast = faCheckCircle;
+                break;
+            case TOAST_ENUM['INFO']:
+                iconToast = faInfoCircle;
                 break;
             default:
                 break;

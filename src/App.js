@@ -28,12 +28,15 @@ class App extends React.Component {
     }
 
     render() {
+        const {account} = this.props;
         return (
             <div className="App">
-                <AccountManagement />
-                {!this.props.location.pathname.startsWith("/panel/") ?
-                    <MainPage account={this.props.account} onLogout={this.onLogout.bind(this)} logo={logo} /> :
-                    <PanelPage account={this.props.account} onLogout={this.onLogout.bind(this)} logo={logo}/>
+                {/* Account manager */}
+                <AccountManagement pathname={this.props.location.pathname} />
+
+                {this.props.location.pathname.startsWith("/panel/") && account.length !== 0 ?
+                    <PanelPage account={account} onLogout={this.onLogout.bind(this)} logo={logo}/> :
+                    <MainPage account={account} onLogout={this.onLogout.bind(this)} logo={logo} />
                 }
             </div>
         );

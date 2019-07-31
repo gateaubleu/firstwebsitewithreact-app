@@ -66,6 +66,10 @@ a:hover{
     background-color: #51A351;
 }
 
+.toast-container .toast.toast-info{
+    background-color: #4894ff;
+}
+
 body{
     line-height: 1.0 !important;
 }

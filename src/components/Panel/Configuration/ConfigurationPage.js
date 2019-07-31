@@ -5,6 +5,7 @@ import {faInfoCircle, faSave} from "@fortawesome/free-solid-svg-icons";
 import AimbotConfigurationForm from "./AimbotConfigurationForm";
 import {connect} from "react-redux";
 import {addToast} from "../../../reducers/actions/ToastActions";
+import VisualConfigurationForm from "./VisualConfigurationForm";
 
 function ConfigurationPage({account, addToast}){
     return(
@@ -21,12 +22,7 @@ function ConfigurationPage({account, addToast}){
                 </div>
 
                 <div className="col-10 col-sm-5 mb-5">
-                    <div className="card">
-                        <div className="card-header text-center">
-                            Visual
-                        </div>
-                        <div className="card-body"></div>
-                    </div>
+                    <VisualConfigurationForm addToast={addToast} saveIcon={faSave} account={account} />
                 </div>
 
                 <div className="col-10 col-sm-5 mb-5">

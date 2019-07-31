@@ -23,6 +23,7 @@ class AimbotConfigurationForm extends React.Component{
 
     componentDidMount() {
         const {account} = this.props;
+        const {addToast} = this.props;
         axios.get(API_URL + API_ROUTES['GET_CONFIGURATION_AIMBOT'], {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
@@ -41,6 +42,9 @@ class AimbotConfigurationForm extends React.Component{
                     });
                     break;
                 case 401:
+                    addToast(TOAST_ENUM['ERROR'], data.errors[0]);
+                    break;
+                default:
                     break;
             }
         });
@@ -89,7 +93,6 @@ class AimbotConfigurationForm extends React.Component{
                     }
                     break;
                 default:
-
                     break;
             }
         });
@@ -162,7 +165,7 @@ class AimbotConfigurationForm extends React.Component{
                         <div className="form-row justify-content-around mt-3">
                             <div className="form-group col-md-5">
                                 <div className="text-center">
-                                    <input className="form-check-input" type="checkbox" value={this.state.aimRcs} checked={this.state.aimRcs ? 'checked' : null} onChange={e => this.setState({aimRcs: !this.state.aimRcs})} id="aimRcs"/>
+                                    <input className="form-check-input" type="checkbox" value={this.state.aimRcs} checked={this.state.aimRcs} onChange={e => this.setState({aimRcs: !this.state.aimRcs})} id="aimRcs"/>
                                     <label htmlFor="aimRcs"><FontAwesomeIcon icon={faSprayCan} /></label>
                                 </div>
                                 <small className="text-center d-block mt-1">Enable this to compensate the weapon spray</small>

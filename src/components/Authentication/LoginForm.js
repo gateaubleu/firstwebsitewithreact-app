@@ -5,7 +5,7 @@ import {addToast, clearToasts} from "../../reducers/actions/ToastActions";
 import {setAccount} from "../../reducers/actions/AccountActions";
 import {TOAST_ENUM} from "../Toaster/ToastEnum";
 import Recaptcha from "react-recaptcha";
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
 import axios from "axios";
 
 class LoginForm extends React.Component{
@@ -15,6 +15,7 @@ class LoginForm extends React.Component{
             username: '',
             password: '',
             captcha: '',
+            success: false
         };
         this.captchaInstance = null;
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -74,7 +75,9 @@ class LoginForm extends React.Component{
 
                         localStorage.setItem(PREFIX_LOCALSTORE + 'token', data.datas.token);
                         localStorage.setItem(PREFIX_LOCALSTORE + 'tokenTimeout', data.datas.tokenValidity);
+
                         //redirect to Panel
+                        this.setState({success: true});
                         break;
                     case 400:
                         if (data.errors.length !== 0) {
@@ -98,7 +101,7 @@ class LoginForm extends React.Component{
     render() {
         return(
             <form className="col-md-6 col-lg-5 d-block mx-auto" onSubmit={e => this.handleSubmit(e)} action={API_ROUTES['LOGIN']}>
-
+                { this.state.success ? <Redirect to={APP_ROUTES['PANEL_HOME']} /> : null }
                 <h2 className="text-center font-weight-bold">Login to your member area.</h2>
 
                 <div className="form-group">
