@@ -4,6 +4,7 @@ import {faSprayCan} from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
+import {AIMBOT} from "./ConfigEnum";
 
 class AimbotConfigurationForm extends React.Component{
     constructor(props){
@@ -24,7 +25,7 @@ class AimbotConfigurationForm extends React.Component{
     componentDidMount() {
         const {account} = this.props;
         const {addToast} = this.props;
-        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION_AIMBOT'], {
+        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + AIMBOT, {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
             let data = response.data;
@@ -32,13 +33,13 @@ class AimbotConfigurationForm extends React.Component{
             switch(data.code){
                 case 200:
                     this.setState({
-                        aimKey: data.aimbot.activation_key,
-                        aimBones: data.aimbot.bones,
-                        aimFovX: data.aimbot.fov_x,
-                        aimFovY: data.aimbot.fov_y,
-                        aimSmoothX: data.aimbot.smooth_x,
-                        aimSmoothY: data.aimbot.smooth_y,
-                        aimRcs: data.aimbot.spray_control
+                        aimKey: data.config.activation_key,
+                        aimBones: data.config.bones,
+                        aimFovX: data.config.fov_x,
+                        aimFovY: data.config.fov_y,
+                        aimSmoothX: data.config.smooth_x,
+                        aimSmoothY: data.config.smooth_y,
+                        aimRcs: data.config.spray_control
                     });
                     break;
                 case 401:
@@ -56,7 +57,7 @@ class AimbotConfigurationForm extends React.Component{
         const {addToast} = this.props;
         const {account} = this.props;
 
-        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION_AIMBOT'], {
+        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + AIMBOT, {
             activation_key: this.state.aimKey,
             bones: this.state.aimBones,
             fov_x: this.state.aimFovX,

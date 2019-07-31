@@ -40,8 +40,8 @@ export const API_ROUTES = {
     AUTH_TOKEN: "/auth/token",
     DOWNLOAD_BUILD: "/panel/get/build/",
     SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription",
-    SAVE_CONFIGURATION_AIMBOT: "/panel/save/aimbot",
-    GET_CONFIGURATION_AIMBOT: "/panel/get/aimbot"
+    SAVE_CONFIGURATION: "/panel/save/config/",
+    GET_CONFIGURATION: "/panel/get/config/"
 };
 
 export const PRICES_SUBSCRIPTIONS = {
