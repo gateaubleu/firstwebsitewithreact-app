@@ -7,6 +7,7 @@ import ToastList from "../Toaster/ToastsList";
 import PanelRouter from "../../PanelRouter";
 import {Link} from "react-router-dom";
 import {APP_ROUTES} from "../../config/Config";
+import {CUSTOMER} from "../Authentication/RoleEnum";
 
 function PanelPage({account, onLogout, logo}) {
     return (
@@ -31,9 +32,12 @@ function PanelPage({account, onLogout, logo}) {
                         <Link className="nav-link" to={APP_ROUTES['PANEL_SUBSCRIPTION']}><FontAwesomeIcon icon={faAllergies}/><span
                             className="nav-text">Subscriptions</span></Link>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to={APP_ROUTES['PANEL_CONFIGURATION']}><FontAwesomeIcon icon={faCog}/><span className="nav-text">Configure my shit</span></Link>
-                    </li>
+                    {account.isCustomer ?
+                        <li className="nav-item">
+                            <Link className="nav-link" to={APP_ROUTES['PANEL_CONFIGURATION']}><FontAwesomeIcon icon={faCog}/><span className="nav-text">Configure my shit</span></Link>
+                        </li> :
+                        null
+                    }
                 </ul>
             </div>
             <div className="content-container">

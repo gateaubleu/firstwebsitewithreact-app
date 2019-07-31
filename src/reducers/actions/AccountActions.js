@@ -8,8 +8,8 @@ export function setAccount(username, roles, token){
         payload: {
             username: username,
             roles: roles,
-            token: token
-
+            token: token,
+            isCustomer: false
         }
     }
 }

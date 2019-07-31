@@ -54,12 +54,6 @@ class DownloadPage extends React.Component{
 
     render() {
         const {account} = this.props;
-
-        let premium = false;
-        if (account.length !== 0 && account.roles.indexOf(CUSTOMER) !== -1) {
-            premium = true;
-        }
-
         return (
             <div id="download">
                 <Breadcrumb title="Download build"/>
@@ -106,9 +100,9 @@ class DownloadPage extends React.Component{
                                 </ul>
                             </div>
 
-                            <Link to="" onClick={e => this.onDownloadBuild(e, "premium")} className={account && premium ? "btn btn-dark" : "btn btn-dark disabled"}>Download</Link>
+                            <Link to="" onClick={e => this.onDownloadBuild(e, "premium")} className={account.isCustomer ? "btn btn-dark" : "btn btn-dark disabled"}>Download</Link>
                         </div>
-                        {!premium ?
+                        {!account.isCustomer ?
                             <Link to={APP_ROUTES['PANEL_SUBSCRIPTION']} className="d-block text-center text-dark mt-1">I
                                 would like the premium !</Link> : null}
                     </div>

@@ -34,7 +34,7 @@ class AccountManagement extends React.Component{
 
                     //inform user about end of session
                     if(!showSessionTimeout && this.props.account.length !== 0){
-                        addToast(TOAST_ENUM['INFO'], 'Timeout.');
+                        addToast(TOAST_ENUM['INFO'], 'You have been disconnected due to session timeout, please reconnect your account.');
                         this.setState({showSessionTimeout: true});
                     }
 

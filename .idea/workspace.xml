@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12f53dd8-2b4e-4360-9e33-8d40da54537d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Authentication/AccountManagement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Authentication/AccountManagement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Authentication/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Authentication/LoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigurationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigurationPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toaster/Toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toaster/Toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toaster/ToastEnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toaster/ToastEnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/PanelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/PanelPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/AccountReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/AccountReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/actions/AccountActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/actions/AccountActions.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,19 +36,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/Config.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/PanelPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
+            <state relative-caret-position="296">
+              <caret line="31" column="123" lean-forward="true" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -60,10 +48,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js">
+        <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="110" column="30" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="102" column="101" selection-start-line="102" selection-start-column="101" selection-end-line="102" selection-end-column="101" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -72,13 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/ConfigurationPage.js">
+        <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -87,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Authentication/AccountManagement.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+              <caret line="36" column="134" selection-start-line="36" selection-start-column="134" selection-end-line="36" selection-end-column="134" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -125,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Authentication/LoginForm.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -137,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Authentication/RegisterForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="460">
               <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="85" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -175,22 +172,18 @@
         <option value="$PROJECT_DIR$/src/reducers/actions/ToastActions.js" />
         <option value="$PROJECT_DIR$/src/components/Authentication/RegisterForm.js" />
         <option value="$PROJECT_DIR$/src/reducers/ToastReducer.js" />
-        <option value="$PROJECT_DIR$/src/reducers/actions/AccountActions.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/reducers/AccountReducer.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/AppRouter.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Breadcrumb.js" />
         <option value="$PROJECT_DIR$/src/components/MainPage.js" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/PanelPage.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Home/HomePage.js" />
         <option value="$PROJECT_DIR$/src/components/Pricing/PricePage.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionForm.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionPage.js" />
         <option value="$PROJECT_DIR$/src/components/Authentication/RoleEnum.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js" />
         <option value="$PROJECT_DIR$/src/PanelRouter.js" />
         <option value="$PROJECT_DIR$/src/config/Config.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Panel.css" />
@@ -200,9 +193,13 @@
         <option value="$PROJECT_DIR$/src/components/Toaster/ToastEnum.js" />
         <option value="$PROJECT_DIR$/src/components/Toaster/Toast.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" />
-        <option value="$PROJECT_DIR$/src/components/Authentication/AccountManagement.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Authentication/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Authentication/AccountManagement.js" />
+        <option value="$PROJECT_DIR$/src/reducers/actions/AccountActions.js" />
+        <option value="$PROJECT_DIR$/src/reducers/AccountReducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/PanelPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js" />
       </list>
     </option>
   </component>
@@ -259,13 +256,6 @@
               <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Authentication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Panel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -273,13 +263,8 @@
               <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Toaster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="Panel" type="462c0819:PsiDirectoryNode" />
+              <item name="Download" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,18 +322,18 @@
       <workItem from="1563967821478" duration="35187000" />
       <workItem from="1564214534694" duration="18979000" />
       <workItem from="1564339439676" duration="16028000" />
-      <workItem from="1564562838408" duration="3661000" />
+      <workItem from="1564562838408" duration="4911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144740000" />
+    <option name="totallyTimeSpent" value="145990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3938731" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15724947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -462,20 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -562,16 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -605,16 +566,6 @@
           <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/PanelPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,16 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Authentication/AccountManagement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Toaster/Toast.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -693,16 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Authentication/RegisterForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Toaster/ToastEnum.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -714,6 +645,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Authentication/RegisterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="17" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/PanelPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="31" column="123" lean-forward="true" selection-start-line="31" selection-start-column="123" selection-end-line="31" selection-end-column="123" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Authentication/AccountManagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" column="134" selection-start-line="36" selection-start-column="134" selection-end-line="36" selection-end-column="134" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="102" column="101" selection-start-line="102" selection-start-column="101" selection-end-line="102" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
