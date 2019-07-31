@@ -10,7 +10,6 @@ import {connect} from "react-redux";
 import {addToast} from "../../../reducers/actions/ToastActions";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
 import uniqid from 'uniqid';
-import {CUSTOMER} from "../../Authentication/RoleEnum";
 
 class DownloadPage extends React.Component{
 

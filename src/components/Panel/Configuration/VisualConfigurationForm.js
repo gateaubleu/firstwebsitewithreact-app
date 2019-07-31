@@ -39,21 +39,25 @@ class VisualConfigurationForm extends React.Component{
 
             switch(data.code){
                 case 200:
-                    this.setState({
-                        visualGlow: data.config.glow,
-                        visualChams: data.config.chams,
-                        visualESP: data.config.esp,
-                        visualEnemyOnly: data.config.enemy_only,
-                        visualColorRedEnemy: data.config.color_red_enemy,
-                        visualColorGreenEnemy: data.config.color_green_enemy,
-                        visualColorBlueEnemy: data.config.color_blue_enemy,
-                        visualColorRedAlly: data.config.color_red_ally,
-                        visualColorGreenAlly: data.config.color_green_ally,
-                        visualColorBlueAlly: data.config.color_blue_ally
-                    });
+                    if(data.config != null) {
+                        this.setState({
+                            visualGlow: data.config.glow,
+                            visualChams: data.config.chams,
+                            visualESP: data.config.esp,
+                            visualEnemyOnly: data.config.enemy_only,
+                            visualColorRedEnemy: data.config.color_red_enemy,
+                            visualColorGreenEnemy: data.config.color_green_enemy,
+                            visualColorBlueEnemy: data.config.color_blue_enemy,
+                            visualColorRedAlly: data.config.color_red_ally,
+                            visualColorGreenAlly: data.config.color_green_ally,
+                            visualColorBlueAlly: data.config.color_blue_ally
+                        });
+                    }
                     break;
                 case 401:
                     addToast(TOAST_ENUM['ERROR'], data.errors[0]);
+                    break;
+                default:
                     break;
             }
         });
@@ -84,9 +88,6 @@ class VisualConfigurationForm extends React.Component{
             switch(data.code){
                 case 200:
                     addToast(TOAST_ENUM['SUCCESS'], "Your config for visual has been sucessfully saved.");
-
-                    // redirect to download area
-                    setTimeout(() => this.setState({success: data.success}), 1000);
                     break;
                 case 400:
                     if(data.errors.length !== 0){
@@ -105,7 +106,6 @@ class VisualConfigurationForm extends React.Component{
                     }
                     break;
                 default:
-
                     break;
             }
         });

@@ -7,7 +7,6 @@ import ToastList from "../Toaster/ToastsList";
 import PanelRouter from "../../PanelRouter";
 import {Link} from "react-router-dom";
 import {APP_ROUTES} from "../../config/Config";
-import {CUSTOMER} from "../Authentication/RoleEnum";
 
 function PanelPage({account, onLogout, logo}) {
     return (

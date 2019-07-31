@@ -32,15 +32,17 @@ class AimbotConfigurationForm extends React.Component{
 
             switch(data.code){
                 case 200:
-                    this.setState({
-                        aimKey: data.config.activation_key,
-                        aimBones: data.config.bones,
-                        aimFovX: data.config.fov_x,
-                        aimFovY: data.config.fov_y,
-                        aimSmoothX: data.config.smooth_x,
-                        aimSmoothY: data.config.smooth_y,
-                        aimRcs: data.config.spray_control
-                    });
+                    if(data.config != null) {
+                        this.setState({
+                            aimKey: data.config.activation_key,
+                            aimBones: data.config.bones,
+                            aimFovX: data.config.fov_x,
+                            aimFovY: data.config.fov_y,
+                            aimSmoothX: data.config.smooth_x,
+                            aimSmoothY: data.config.smooth_y,
+                            aimRcs: data.config.spray_control
+                        });
+                    }
                     break;
                 case 401:
                     addToast(TOAST_ENUM['ERROR'], data.errors[0]);
@@ -73,9 +75,6 @@ class AimbotConfigurationForm extends React.Component{
             switch(data.code){
                 case 200:
                     addToast(TOAST_ENUM['SUCCESS'], "Your config for aimbot has been sucessfully saved.");
-
-                    // redirect to download area
-                    setTimeout(() => this.setState({success: data.success}), 1000);
                     break;
                 case 400:
                     if(data.errors.length !== 0){

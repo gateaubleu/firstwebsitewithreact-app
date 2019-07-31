@@ -4,7 +4,7 @@ import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
 import {MISC} from "./ConfigEnum";
-import {faHighlighter, faMapMarkedAlt, faSprayCan, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarkedAlt, faSprayCan, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
 
 class MiscConfigurationForm extends React.Component{
     constructor(props){
@@ -35,18 +35,20 @@ class MiscConfigurationForm extends React.Component{
 
             switch(data.code){
                 case 200:
-                    this.setState({
-                        miscRadar: data.config.radar,
-                        miscRcs: data.config.standalone_spray,
-                        miscRcsSensitivity: data.config.spray_sensitivity,
-                        miscRcsForceX: data.config.spray_force_x,
-                        miscRcsForceY: data.config.spray_force_y,
-                        miscSonar: data.config.sound_esp,
-                        miscSonarFov: data.config.sound_fov,
-                        miscSonarFrequency: data.config.sound_duration,
-                        miscSonarDuration: data.config.sound_frequency,
-                        miscSonarInterval: data.config.sound_interval
-                    });
+                    if(data.config != null) {
+                        this.setState({
+                            miscRadar: data.config.radar,
+                            miscRcs: data.config.standalone_spray,
+                            miscRcsSensitivity: data.config.spray_sensitivity,
+                            miscRcsForceX: data.config.spray_force_x,
+                            miscRcsForceY: data.config.spray_force_y,
+                            miscSonar: data.config.sound_esp,
+                            miscSonarFov: data.config.sound_fov,
+                            miscSonarFrequency: data.config.sound_duration,
+                            miscSonarDuration: data.config.sound_frequency,
+                            miscSonarInterval: data.config.sound_interval
+                        });
+                    }
                     break;
                 case 401:
                     addToast(TOAST_ENUM['ERROR'], data.errors[0]);
@@ -80,9 +82,6 @@ class MiscConfigurationForm extends React.Component{
             switch(data.code){
                 case 200:
                     addToast(TOAST_ENUM['SUCCESS'], "Your config for misc has been sucessfully saved.");
-
-                    // redirect to download area
-                    setTimeout(() => this.setState({success: data.success}), 1000);
                     break;
                 case 400:
                     if(data.errors.length !== 0){

@@ -7,6 +7,7 @@ import {connect} from "react-redux";
 import {addToast} from "../../../reducers/actions/ToastActions";
 import VisualConfigurationForm from "./VisualConfigurationForm";
 import MiscConfigurationForm from "./MiscConfigurationForm";
+import TriggerbotConfigurationForm from "./TriggerbotConfigurationForm";
 
 function ConfigurationPage({account, addToast}){
     return(
@@ -24,6 +25,10 @@ function ConfigurationPage({account, addToast}){
 
                 <div className="col-10 col-sm-5 mb-5">
                     <VisualConfigurationForm addToast={addToast} saveIcon={faSave} account={account} />
+                </div>
+
+                <div className="col-10 col-sm-5 mb-5">
+                    <TriggerbotConfigurationForm addToast={addToast} saveIcon={faSave} account={account} />
                 </div>
 
                 <div className="col-10 col-sm-5 mb-5">
