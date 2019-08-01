@@ -84,7 +84,7 @@ class HardwareRegisterForm extends React.Component{
                         Hardware ID
                     </div>
                     <div className="card-body">
-                        <p>En attente de la description de 7PHO</p>
+                        <p className="text-center">The purpose of an hardware id is to secure and limit the usage of the cheat to only 1 computer, it block any sharing attempts and secure your build from being used by someone else.</p>
                         <form onSubmit={e => this.onSubmit(e)} action="">
                             <div className="form">
                                 <div className="form-group w-50 d-block mx-auto">
