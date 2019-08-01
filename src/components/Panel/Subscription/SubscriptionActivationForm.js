@@ -1,6 +1,6 @@
 import React from 'react';
 import Recaptcha from "react-recaptcha";
-import {Redirect} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 import {API_ROUTES, API_URL, APP_ROUTES, RECAPTCHA_KEY} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
 import {connect} from "react-redux";
@@ -32,8 +32,6 @@ class SubscriptionActivationForm extends React.Component{
 
         const {addToast} = this.props;
         const {account} = this.props;
-
-        console.log(account);
 
         if(this.state.captcha.length === 0){
             addToast(TOAST_ENUM['ERROR'], 'The captcha need to be completed.');
@@ -93,6 +91,7 @@ class SubscriptionActivationForm extends React.Component{
                 </div>
 
                 <button className="mt-2 d-block mx-auto btn btn-danger" type="submit">Activate</button>
+                <p className="text-center small mt-2">After you need to go <Link className="link" to={APP_ROUTES['PANEL_USER_COG']}>here</Link>, for register your hardware id.</p>
             </form>
         );
     }

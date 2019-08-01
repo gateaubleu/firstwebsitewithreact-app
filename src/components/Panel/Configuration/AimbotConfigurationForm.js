@@ -74,7 +74,7 @@ class AimbotConfigurationForm extends React.Component{
 
             switch(data.code){
                 case 200:
-                    addToast(TOAST_ENUM['SUCCESS'], "Your config for aimbot has been sucessfully saved.");
+                    addToast(TOAST_ENUM['SUCCESS'], "Your config for aimbot has been successfully saved.");
                     break;
                 case 400:
                     if(data.errors.length !== 0){

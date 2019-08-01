@@ -30,7 +30,8 @@ export const APP_ROUTES = {
     PANEL_CONFIGURATION: "/panel/config",
     PANEL_DOWNLOAD: "/panel/download",
     PANEL_SUBSCRIPTION: "/panel/subscription",
-    PANEL_INFORMATIONS: "/panel/informations"
+    PANEL_INFORMATIONS: "/panel/informations",
+    PANEL_USER_COG: "/panel/user/settings"
 };
 
 export const API_ROUTES = {
@@ -41,13 +42,14 @@ export const API_ROUTES = {
     DOWNLOAD_BUILD: "/panel/get/build/",
     SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription",
     SAVE_CONFIGURATION: "/panel/save/config/",
-    GET_CONFIGURATION: "/panel/get/config/"
+    GET_CONFIGURATION: "/panel/get/config/",
+    SET_HARDWARE_ID: "/panel/set/hardware"
 };
 
 export const PRICES_SUBSCRIPTIONS = {
-    ONE: "5 €",
-    THREE: "13 €",
-    LIFETIME: "30 €"
+    ONE: "5 $",
+    THREE: "13 $",
+    LIFETIME: "30 $"
 };
 
 export const SELLY_LINK = {

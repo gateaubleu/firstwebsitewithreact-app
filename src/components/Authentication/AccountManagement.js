@@ -47,7 +47,7 @@ class AccountManagement extends React.Component{
                     }).then(
                         (response) => {
                             let data = response.data;
-                            this.props.setAccount(data.username, data.roles, localStorage.getItem(PREFIX_LOCALSTORE + 'token'));
+                            this.props.setAccount(data.username, data.roles, data.subscriptionEnd, localStorage.getItem(PREFIX_LOCALSTORE + 'token'));
                             this.setState({
                                 showNeedMemberArea: false,
                                 showSessionTimeout: false
@@ -93,8 +93,8 @@ const mapDispatchToProps = (dispatch) => {
         removeAccount: () => {
             dispatch(removeAccount());
         },
-        setAccount: (username, roles, token) => {
-            dispatch(setAccount(username, roles, token));
+        setAccount: (username, roles, subscriptionEnd, token) => {
+            dispatch(setAccount(username, roles, subscriptionEnd, token));
         },
         addToast: (type, content) => {
             dispatch(addToast(type, content));

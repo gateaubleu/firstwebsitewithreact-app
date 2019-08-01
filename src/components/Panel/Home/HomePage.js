@@ -5,6 +5,19 @@ import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import {ANTICHEATS, DISCORD_CLIENT_ID, RELEASE_DATE, STATUT, UPDATE_DATE} from "../../../config/Config";
 
 function HomePage({account}) {
+    let roles = "Free member";
+    let color = "darkgray";
+
+    if(account.isCustomer){
+        roles = "Premium member";
+        color = "#d09230";
+    }
+
+    if(account.isAdmin || account.isModerator){
+        roles = "Staff";
+        color = "#702320";
+    }
+
     return (
         <div id="home">
             <Breadcrumb title="Home"/>
@@ -17,8 +30,8 @@ function HomePage({account}) {
                     <div className="informations col-7 col-md-5">
                         <ul className="nav flex-column">
                             <li><h2 id="username">{account.username}</h2></li>
-                            <li>Member since 0 days</li>
-                            <li>Subscription end: 25/07/2019</li>
+                            <li style={{color: color}} className="font-italic font-weight-bolder">{roles}</li>
+                            <li>Subscription end: {account.subscriptionEnd}</li>
                             <li>
                                 <div className="progress">
                                     <div className="progress-bar w-75" role="progressbar" aria-valuenow="75"

@@ -2,7 +2,7 @@ import React from 'react';
 import './Panel.css';
 import smallIcon from '../../assets/img/small-icon.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAllergies, faCog, faDownload, faHome, faSignOutAlt} from "@fortawesome/free-solid-svg-icons";
+import {faAllergies, faCog, faDownload, faHome, faSignOutAlt, faUserCog} from "@fortawesome/free-solid-svg-icons";
 import ToastList from "../Toaster/ToastsList";
 import PanelRouter from "../../PanelRouter";
 import {Link} from "react-router-dom";
@@ -34,6 +34,12 @@ function PanelPage({account, onLogout, logo}) {
                     {account.isCustomer ?
                         <li className="nav-item">
                             <Link className="nav-link" to={APP_ROUTES['PANEL_CONFIGURATION']}><FontAwesomeIcon icon={faCog}/><span className="nav-text">Configure my shit</span></Link>
+                        </li> :
+                        null
+                    }
+                    {account.isCustomer ?
+                        <li className="nav-item">
+                            <Link className="nav-link" to={APP_ROUTES['PANEL_USER_COG']}><FontAwesomeIcon icon={faUserCog}/><span className="nav-text">Account Management</span></Link>
                         </li> :
                         null
                     }

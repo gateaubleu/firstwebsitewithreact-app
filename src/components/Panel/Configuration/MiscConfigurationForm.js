@@ -53,6 +53,8 @@ class MiscConfigurationForm extends React.Component{
                 case 401:
                     addToast(TOAST_ENUM['ERROR'], data.errors[0]);
                     break;
+                default:
+                    break;
             }
         });
     }
@@ -81,7 +83,7 @@ class MiscConfigurationForm extends React.Component{
 
             switch(data.code){
                 case 200:
-                    addToast(TOAST_ENUM['SUCCESS'], "Your config for misc has been sucessfully saved.");
+                    addToast(TOAST_ENUM['SUCCESS'], "Your config for misc has been successfully saved.");
                     break;
                 case 400:
                     if(data.errors.length !== 0){
@@ -100,7 +102,6 @@ class MiscConfigurationForm extends React.Component{
                     }
                     break;
                 default:
-
                     break;
             }
         });

@@ -147,9 +147,18 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.82);
     width: 100%;
-    color: white;
+    color: white !important;
     padding: 5px;
     margin-bottom: 10px;
+}
+
+#price #price-content .price-link{
+    color: black !important;
+}
+
+#price #price-content .price-link:hover{
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 #price #price-content .price .title h2{
@@ -162,6 +171,11 @@ header .nav-item.active .nav-link, header .nav-item .nav-link:hover{
     text-align: center;
     font-size: 18px;
     font-weight: bold;
+}
+
+#price #price-content .ul-custom li{
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 ul.ul-custom{

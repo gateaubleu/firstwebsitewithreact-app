@@ -71,13 +71,13 @@ class LoginForm extends React.Component{
                 switch(data.code) {
                     case 200:
                         addToast(TOAST_ENUM['SUCCESS'], 'Welcome back ' + this.state.username + ', you are now connected.');
-                        setAccount(data.datas.username, data.datas.roles, data.datas.token);
+                        setAccount(data.datas.username, data.datas.roles, data.datas.subscriptionEnd.date, data.datas.token);
 
                         localStorage.setItem(PREFIX_LOCALSTORE + 'token', data.datas.token);
                         localStorage.setItem(PREFIX_LOCALSTORE + 'tokenTimeout', data.datas.tokenValidity);
 
                         //redirect to Panel
-                        this.setState({success: true});
+                        setTimeout(() => this.setState({success: true}), 1000);
                         break;
                     case 400:
                         if (data.errors.length !== 0) {
@@ -144,8 +144,8 @@ const mapDispatchToProps = (dispatch) => {
         clearToasts: () =>{
             dispatch(clearToasts());
         },
-        setAccount: (username, roles, token) =>{
-            dispatch(setAccount(username, roles, token));
+        setAccount: (username, roles, subscriptionEnd, token) =>{
+            dispatch(setAccount(username, roles, subscriptionEnd, token));
         }
     }
 };
