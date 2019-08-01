@@ -7,6 +7,8 @@ export const DISCORD_LINK = "http://google.fr";
 export const STEAM_LINK = "http://google.fr";
 export const PREFIX_LOCALSTORE = "467d4RoPjW65_";
 
+export const EXAMPLE_FILE_UPDATE = "https://raw.githubusercontent.com/frk1/hazedumper/master/csgo.min.json";
+
 export const STATUT = "Never";
 export const RELEASE_DATE = "15/05/2018";
 export const UPDATE_DATE = "25/07/2019";
@@ -31,7 +33,8 @@ export const APP_ROUTES = {
     PANEL_DOWNLOAD: "/panel/download",
     PANEL_SUBSCRIPTION: "/panel/subscription",
     PANEL_INFORMATIONS: "/panel/informations",
-    PANEL_USER_COG: "/panel/user/settings"
+    PANEL_USER_COG: "/panel/user/settings",
+    PANEL_UPDATE_CHEAT: "/panel/admin/update"
 };
 
 export const API_ROUTES = {
@@ -44,7 +47,8 @@ export const API_ROUTES = {
     SAVE_CONFIGURATION: "/panel/save/config/",
     GET_CONFIGURATION: "/panel/get/config/",
     SET_HARDWARE_ID: "/panel/set/hardware",
-    GET_HARDWARE_TOOL: "/panel/get/tool/hardware"
+    GET_HARDWARE_TOOL: "/panel/get/tool/hardware",
+    UPLOAD_UPDATE_CHEAT_JSON: "/panel/upload/update"
 };
 
 export const PRICES_SUBSCRIPTIONS = {

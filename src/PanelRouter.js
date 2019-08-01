@@ -5,7 +5,8 @@ import HomePage from "./components/Panel/Home/HomePage";
 import DownloadPage from "./components/Panel/Download/DownloadPage";
 import SubscriptionPage from "./components/Panel/Subscription/SubscriptionPage";
 import ConfigurationPage from "./components/Panel/Configuration/ConfigurationPage";
-import UserCog from "./components/Panel/User/UserCog";
+import UserCogPage from "./components/Panel/User/UserCogPage";
+import UpdateCheatPage from "./components/Panel/Administration/UpdateCheat/UpdateCheatPage";
 
 
 /**
@@ -19,7 +20,8 @@ const authenticatedRoute = (account) => {
             <Route exact path={APP_ROUTES['PANEL_HOME']} render={p => <HomePage {...p} account={account} /> } />
             <Route exact path={APP_ROUTES['PANEL_DOWNLOAD']} render={p => <DownloadPage {...p} account={account} /> } />
             <Route exact path={APP_ROUTES['PANEL_SUBSCRIPTION']} render={p => <SubscriptionPage {...p} account={account} /> } />
-            { account.isCustomer ? customerRoute(account) : null}
+            { account.isCustomer ? customerRoute(account) : null }
+            { account.isModerator ? moderatorRoute(account) : null }
         </Fragment>
     );
 };
@@ -33,7 +35,15 @@ const customerRoute = (account) => {
     return(
         <Fragment>
             <Route exact path={APP_ROUTES['PANEL_CONFIGURATION']} render={p => <ConfigurationPage {...p} account={account} /> } />
-            <Route exact path={APP_ROUTES['PANEL_USER_COG']} render={p => <UserCog {...p} account={account} /> } />
+            <Route exact path={APP_ROUTES['PANEL_USER_COG']} render={p => <UserCogPage {...p} account={account} /> } />
+        </Fragment>
+    );
+};
+
+const moderatorRoute = (account) => {
+    return(
+        <Fragment>
+            <Route exact path={APP_ROUTES['PANEL_UPDATE_CHEAT']} render={p => <UpdateCheatPage {...p} account={account} /> } />
         </Fragment>
     );
 };

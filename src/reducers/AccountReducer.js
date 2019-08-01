@@ -14,6 +14,7 @@ function accountReducer(state = [], action){
             }
 
             if(action.payload.roles.indexOf(ADMIN) !== -1){
+                action.payload.isModerator = true;
                 action.payload.isAdmin = true;
             }
 

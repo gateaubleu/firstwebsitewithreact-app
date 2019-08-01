@@ -2,9 +2,9 @@ import React from 'react';
 import Breadcrumb from "../Breadcrumb";
 import HardwareRegisterForm from "./HardwareRegisterForm";
 
-function UserCog({account}) {
+function UserCogPage({account}) {
     return (
-        <div id="user_cog">
+        <div id="user-cog">
             <Breadcrumb title="User settings"/>
             <div className="row justify-content-around">
                 {account.isCustomer ? <HardwareRegisterForm /> : null}
@@ -13,4 +13,4 @@ function UserCog({account}) {
     );
 }
 
-export default UserCog;
+export default UserCogPage;
