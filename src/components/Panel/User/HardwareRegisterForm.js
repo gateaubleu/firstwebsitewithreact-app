@@ -4,7 +4,11 @@ import {API_ROUTES, API_URL, RECAPTCHA_KEY} from "../../../config/Config";
 import {addToast} from "../../../reducers/actions/ToastActions";
 import {connect} from "react-redux";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from "axios";
+import {faDownload} from "@fortawesome/free-solid-svg-icons";
+import FileDownload from "js-file-download";
+import uniqid from "uniqid";
 
 class HardwareRegisterForm extends React.Component{
     constructor(props){
@@ -15,6 +19,7 @@ class HardwareRegisterForm extends React.Component{
         };
 
         this.captchaInstance = null;
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     resetCaptcha(){
@@ -22,6 +27,7 @@ class HardwareRegisterForm extends React.Component{
         this.setState({captcha: ''});
         console.clear();
     }
+
 
     onSubmit(e){
         e.preventDefault();
@@ -76,6 +82,36 @@ class HardwareRegisterForm extends React.Component{
         }
     }
 
+    onDownloadTool(e){
+        e.preventDefault();
+
+        const {account} = this.props;
+
+        axios.get(API_URL + API_ROUTES['GET_HARDWARE_TOOL'], {
+            headers: {'Authorization': "bearer " + account.token},
+        }).then((response) => {
+            const data = response.data;
+
+            switch(data.code){
+                case 202:
+                    let build = new Buffer(data.build, 'base64');
+                    FileDownload(build, "TakeMyHwid.exe");
+                    break;
+                case 401:
+                    if(data.errors.length !== 0){
+                        data.errors.map(error => addToast(TOAST_ENUM['ERROR'], error));
+                    }
+                    else{
+                        addToast(TOAST_ENUM['ERROR'], 'Please refresh the page.');
+                    }
+                    break;
+                default:
+                    break;
+            }
+        });
+
+    }
+
     render(){
         return(
             <div className="col-10 mb-5">
@@ -85,12 +121,17 @@ class HardwareRegisterForm extends React.Component{
                     </div>
                     <div className="card-body">
                         <p className="text-center">The purpose of an hardware id is to secure and limit the usage of the cheat to only 1 computer, it block any sharing attempts and secure your build from being used by someone else.</p>
+
+                        <form className="mb-3 mt-3" onSubmit={e => this.onDownloadTool(e)} action="">
+                            <button type="submit" className="btn btn-dark d-block mx-auto"><FontAwesomeIcon icon={faDownload} /> Download the tool</button>
+                        </form>
+
                         <form onSubmit={e => this.onSubmit(e)} action="">
                             <div className="form">
                                 <div className="form-group w-50 d-block mx-auto">
                                     <label htmlFor="">Harware ID:</label>
                                     <input type="text" className="form-control"
-                                           placeholder="1111B-4545-D4564-D456456"
+                                           placeholder="1111B-4545-D4564-D4564"
                                            value={this.state.hwid}
                                            onChange={e => this.setState({hwid: e.target.value})}/>
                                 </div>

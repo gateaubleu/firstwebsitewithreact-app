@@ -43,7 +43,8 @@ export const API_ROUTES = {
     SUBSCRIPTION_ACTIVATION: "/panel/activate/subscription",
     SAVE_CONFIGURATION: "/panel/save/config/",
     GET_CONFIGURATION: "/panel/get/config/",
-    SET_HARDWARE_ID: "/panel/set/hardware"
+    SET_HARDWARE_ID: "/panel/set/hardware",
+    GET_HARDWARE_TOOL: "/panel/get/tool/hardware"
 };
 
 export const PRICES_SUBSCRIPTIONS = {

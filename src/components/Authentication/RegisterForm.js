@@ -13,6 +13,7 @@ class RegisterForm extends React.Component{
         this.state = {
             username: '',
             password: '',
+            email: '',
             repassword: '',
             captcha: '',
             maxUsernameLength: 20,
@@ -55,6 +56,11 @@ class RegisterForm extends React.Component{
             document.getElementById('usernameRegister').classList.add('is-invalid');
         }
 
+        if(this.state.email.indexOf('@') === -1){
+            addToast(TOAST_ENUM['ERROR'], 'Your email is not a valid email.');
+            document.getElementById('emailRegister').classList.add('is-invalid');
+        }
+
         if(this.state.password.length < this.state.minPasswordLength){
             addToast(TOAST_ENUM['ERROR'], 'The password must contain a minimum of '+ this.state.minPasswordLength +' characters.');
             document.getElementById('passwordRegister').classList.add('is-invalid');
@@ -84,6 +90,7 @@ class RegisterForm extends React.Component{
                     first: this.state.password,
                     second: this.state.repassword
                 },
+                email: this.state.email,
                 recaptcha: this.state.captcha
             }).then(response => {
                 let data = response.data;
@@ -120,13 +127,19 @@ class RegisterForm extends React.Component{
                     <div className="form-group">
                         <label htmlFor="usernameRegister">Username:</label>
                         <input type="text" className="d-block form-control" id="usernameRegister" required onChange={e => this.setState({username: e.target.value})} value={this.state.username}/>
-                        <small>Username must be between {this.state.minUsernameLength} and {this.state.maxUsernameLength} characters.</small>
+                        <small className="form-text text-muted">Username must be between {this.state.minUsernameLength} and {this.state.maxUsernameLength} characters.</small>
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="emailRegister">Email:</label>
+                        <input type="email" className="d-block form-control" id="emailRegister" required onChange={e => this.setState({email: e.target.value})} value={this.state.email}/>
+                        <small className="form-text text-muted">It will never be used for commercial purposes.</small>
                     </div>
 
                     <div className="form-group">
                         <label htmlFor="passwordRegister">Password:</label>
                         <input type="password" className="d-block form-control" id="passwordRegister" required onChange={e => this.setState({password: e.target.value})} value={this.state.password}/>
-                        <small>Password must be between {this.state.minPasswordLength} and {this.state.maxPasswordLength} characters.</small>
+                        <small className="form-text text-muted">Password must be between {this.state.minPasswordLength} and {this.state.maxPasswordLength} characters.</small>
                     </div>
 
                     <div className="form-group">
