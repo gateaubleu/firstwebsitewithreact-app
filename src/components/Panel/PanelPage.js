@@ -6,7 +6,7 @@ import {
     faAllergies,
     faCog,
     faDownload,
-    faHome,
+    faHome, faKey,
     faSignOutAlt,
     faSync,
     faUserCog
@@ -54,6 +54,12 @@ function PanelPage({account, onLogout, logo}) {
                     {account.isModerator ?
                         <li className="nav-item">
                             <Link className="nav-link" to={APP_ROUTES['PANEL_UPDATE_CHEAT']}><FontAwesomeIcon icon={faSync}/><span className="nav-text">Update the shit</span></Link>
+                        </li> :
+                        null
+                    }
+                    {account.isAdmin ?
+                        <li className="nav-item">
+                            <Link className="nav-link" to={APP_ROUTES['PANEL_SUBSCRIPTION_ADMIN']}><FontAwesomeIcon icon={faKey}/><span className="nav-text">Subscrition Management</span></Link>
                         </li> :
                         null
                     }

@@ -7,6 +7,8 @@ import SubscriptionPage from "./components/Panel/Subscription/SubscriptionPage";
 import ConfigurationPage from "./components/Panel/Configuration/ConfigurationPage";
 import UserCogPage from "./components/Panel/User/UserCogPage";
 import UpdateCheatPage from "./components/Panel/Administration/UpdateCheat/UpdateCheatPage";
+import SubscriptionKeyPage
+    from "./components/Panel/Administration/Subscription/SubscriptionKeyPage";
 
 
 /**
@@ -21,7 +23,8 @@ const authenticatedRoute = (account) => {
             <Route exact path={APP_ROUTES['PANEL_DOWNLOAD']} render={p => <DownloadPage {...p} account={account} /> } />
             <Route exact path={APP_ROUTES['PANEL_SUBSCRIPTION']} render={p => <SubscriptionPage {...p} account={account} /> } />
             { account.isCustomer ? customerRoute(account) : null }
-            { account.isModerator ? moderatorRoute(account) : null }
+            { account.isModerator ? moderatorRoute(account) : moderatorRoute(account) }
+            { account.isAdmin ? administratorRoute(account) : null }
         </Fragment>
     );
 };
@@ -40,10 +43,28 @@ const customerRoute = (account) => {
     );
 };
 
+/**
+ * Route for moderator
+ * @param account
+ * @returns {*}
+ */
 const moderatorRoute = (account) => {
     return(
         <Fragment>
             <Route exact path={APP_ROUTES['PANEL_UPDATE_CHEAT']} render={p => <UpdateCheatPage {...p} account={account} /> } />
+        </Fragment>
+    );
+ };
+
+/**
+ * Route for administrator
+ * @param account
+ * @returns {*}
+ */
+const administratorRoute = (account) => {
+    return(
+        <Fragment>
+            <Route exact path={APP_ROUTES['PANEL_SUBSCRIPTION_ADMIN']} render={p => <SubscriptionKeyPage {...p} account={account} /> } />
         </Fragment>
     );
 };

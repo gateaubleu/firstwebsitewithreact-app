@@ -40,7 +40,6 @@ class UpdateCheatPage extends React.Component{
             }
 
             if(errors.length === 0){
-                console.log(this.state.updatedFile[0]);
                 var formData = new FormData();
                 formData.append("json_file", this.state.updatedFile[0]);
 
@@ -67,15 +66,17 @@ class UpdateCheatPage extends React.Component{
                         default:
                             break;
                     }
+                }).catch(error => {
+                    let data = error.response.data;
 
+                    if(data.error != null && data.error.exception != null){
+                        addToast(TOAST_ENUM['ERROR'], data.error.exception[0].message);
+                    }
                 });
             }
             else{
                 errors.forEach(error => addToast(TOAST_ENUM['ERROR'], error));
             }
-
-
-
         }
         else{
             addToast(TOAST_ENUM['ERROR'], 'You need to select file.');

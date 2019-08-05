@@ -3,8 +3,8 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
-import {MISC} from "./ConfigEnum";
 import {faMapMarkedAlt, faSprayCan, faVolumeUp} from "@fortawesome/free-solid-svg-icons";
+import {ConfigEnum} from "./ConfigEnum";
 
 class MiscConfigurationForm extends React.Component{
     constructor(props){
@@ -28,7 +28,7 @@ class MiscConfigurationForm extends React.Component{
     componentDidMount() {
         const {account} = this.props;
         const {addToast} = this.props;
-        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + MISC, {
+        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + ConfigEnum['MISC'], {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
             let data = response.data;
@@ -65,7 +65,7 @@ class MiscConfigurationForm extends React.Component{
         const {addToast} = this.props;
         const {account} = this.props;
 
-        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + MISC, {
+        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + ConfigEnum['MISC'], {
             radar: this.state.miscRadar,
             standalone_spray: this.state.miscRcs,
             spray_sensitivity: this.state.miscRcsSensitivity,

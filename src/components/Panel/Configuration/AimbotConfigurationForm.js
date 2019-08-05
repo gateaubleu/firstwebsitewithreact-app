@@ -4,7 +4,7 @@ import {faSprayCan} from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
-import {AIMBOT} from "./ConfigEnum";
+import {ConfigEnum} from "./ConfigEnum";
 
 class AimbotConfigurationForm extends React.Component{
     constructor(props){
@@ -25,7 +25,7 @@ class AimbotConfigurationForm extends React.Component{
     componentDidMount() {
         const {account} = this.props;
         const {addToast} = this.props;
-        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + AIMBOT, {
+        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + ConfigEnum['AIMBOT'], {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
             let data = response.data;
@@ -59,7 +59,7 @@ class AimbotConfigurationForm extends React.Component{
         const {addToast} = this.props;
         const {account} = this.props;
 
-        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + AIMBOT, {
+        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + ConfigEnum['AIMBOT'], {
             activation_key: this.state.aimKey,
             bones: this.state.aimBones,
             fov_x: this.state.aimFovX,
@@ -118,7 +118,7 @@ class AimbotConfigurationForm extends React.Component{
                     <div className="card-body">
                         <div className="form-row justify-content-around">
                             <div className="form-group col-md-5">
-                                <label htmlFor="aimKey">Key (<a className="text-blue" rel="noopener noreferrer" target="_blank" href="http://nehe.gamedev.net/article/msdn_virtualkey_codes/15009/">see</a>)</label>
+                                <label htmlFor="aimKey">Key (<a className="text-blue" rel="noopener noreferrer" target="_blank" href="http://cherrytree.at/misc/vk.htm">see</a>)</label>
                                 <input type="text" className="form-control" value={this.state.aimKey} onChange={e => this.setState({aimKey: e.target.value})} id="aimKey" />
                                 <small className="text-center d-block mt-1">Number that represents the key on which to stay press for the aimbot to work</small>
                             </div>

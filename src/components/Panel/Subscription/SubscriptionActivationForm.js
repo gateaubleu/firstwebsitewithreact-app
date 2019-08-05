@@ -50,9 +50,7 @@ class SubscriptionActivationForm extends React.Component{
                 switch(data.code){
                     case 200:
                         addToast(TOAST_ENUM['SUCCESS'], "Your subscription has been activated sucessfuly ! You can now download your build.");
-
-                        // redirect to download area
-                        setTimeout(() => this.setState({success: data.success}), 1000);
+                        addToast(TOAST_ENUM['INFO'], "Don't forget to set your hardware id on Account Management.");
                         break;
                     case 400:
                         if(data.errors.length !== 0){
@@ -75,7 +73,6 @@ class SubscriptionActivationForm extends React.Component{
     render(){
         return(
             <form style={{padding: '10px'}} action="" onSubmit={e => this.onSubmit(e)}>
-                { this.state.success ? <Redirect to={APP_ROUTES['PANEL_DOWNLOAD']} /> : null }
                 <div className="form-group w-50 d-block mx-auto">
                     <label htmlFor="">Code:</label>
                     <input type="text" className="form-control" placeholder="Code activation" onChange={e => this.setState({activationCode: e.target.value})}/>

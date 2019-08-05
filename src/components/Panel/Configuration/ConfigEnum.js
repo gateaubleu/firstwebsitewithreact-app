@@ -1,4 +1,6 @@
-export const AIMBOT = "aimbot";
-export const VISUAL = "visual";
-export const TRIGGERBOT = "triggerbot"
-export const MISC = "misc";
+export const ConfigEnum = {
+    AIMBOT: 'aimbot',
+    VISUAL: 'visual',
+    TRIGGERBOT: 'triggerbot',
+    MISC: 'misc'
+};

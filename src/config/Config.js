@@ -34,7 +34,8 @@ export const APP_ROUTES = {
     PANEL_SUBSCRIPTION: "/panel/subscription",
     PANEL_INFORMATIONS: "/panel/informations",
     PANEL_USER_COG: "/panel/user/settings",
-    PANEL_UPDATE_CHEAT: "/panel/admin/update"
+    PANEL_UPDATE_CHEAT: "/panel/admin/update",
+    PANEL_SUBSCRIPTION_ADMIN: "/panel/admin/subscription"
 };
 
 export const API_ROUTES = {
@@ -48,7 +49,10 @@ export const API_ROUTES = {
     GET_CONFIGURATION: "/panel/get/config/",
     SET_HARDWARE_ID: "/panel/set/hardware",
     GET_HARDWARE_TOOL: "/panel/get/tool/hardware",
-    UPLOAD_UPDATE_CHEAT_JSON: "/panel/upload/update"
+    UPLOAD_UPDATE_CHEAT_JSON: "/panel/admin/upload/update",
+    ADD_SUBSCRIPTION_CODE: "/panel/admin/subscription/add",
+    GET_ALL_SUBSCRIPTION_CODE: "/panel/admin/subscription/all",
+    DELETE_SUBSCRIPTION_CODE: "/panel/admin/subscription/delete/"
 };
 
 export const PRICES_SUBSCRIPTIONS = {

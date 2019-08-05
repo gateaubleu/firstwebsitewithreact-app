@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
-import {TRIGGERBOT} from "./ConfigEnum";
+import {ConfigEnum} from "./ConfigEnum";
 
 class TriggerbotConfigurationForm extends React.Component{
     constructor(props){
@@ -20,7 +20,7 @@ class TriggerbotConfigurationForm extends React.Component{
     componentDidMount() {
         const {account} = this.props;
         const {addToast} = this.props;
-        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + TRIGGERBOT, {
+        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + ConfigEnum['TRIGGERBOT'], {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
             let data = response.data;
@@ -50,7 +50,7 @@ class TriggerbotConfigurationForm extends React.Component{
         const {addToast} = this.props;
         const {account} = this.props;
 
-        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + TRIGGERBOT, {
+        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + ConfigEnum['TRIGGERBOT'], {
             activation_key: this.state.triggerKey,
             min_delay: this.state.triggerMinDelay,
             max_delay: this.state.triggerMaxDelay
@@ -106,7 +106,7 @@ class TriggerbotConfigurationForm extends React.Component{
                     <div className="card-body">
                         <div className="form-row justify-content-around">
                             <div className="form-group col-md-5">
-                                <label htmlFor="triggerKey">Key (<a className="text-blue" rel="noopener noreferrer" target="_blank" href="http://nehe.gamedev.net/article/msdn_virtualkey_codes/15009/">see</a>)</label>
+                                <label htmlFor="triggerKey">Key (<a className="text-blue" rel="noopener noreferrer" target="_blank" href="http://cherrytree.at/misc/vk.htm">see</a>)</label>
                                 <input type="text" className="form-control" value={this.state.triggerKey} onChange={e => this.setState({triggerKey: e.target.value})} id="triggerKey" />
                                 <small className="text-center d-block mt-1">Number that represents the key on which to stay press for the triggerbot work</small>
                             </div>

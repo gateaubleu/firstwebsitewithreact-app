@@ -3,11 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="12f53dd8-2b4e-4360-9e33-8d40da54537d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PanelRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PanelRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheat/UpdateCheatPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheat/UpdateCheatPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Panel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Panel/PanelPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/PanelPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Panel/User/UserCog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/User/UserCogPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/Config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/AccountReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/AccountReducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,34 +45,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/PanelPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="55" column="89" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="89" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheat/UpdateCheatPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PanelRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+            <state relative-caret-position="236">
+              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -73,10 +57,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/User/UserCogPage.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyAddForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="536">
+              <caret line="80" column="133" selection-start-line="80" selection-start-column="133" selection-end-line="80" selection-end-column="133" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -85,10 +69,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/User/HardwareRegisterForm.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="416">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -97,10 +81,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="45" column="21" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="45" selection-end-column="21" />
+            <state relative-caret-position="296">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="52" column="112" selection-start-line="52" selection-start-column="112" selection-end-line="52" selection-end-column="112" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTableActionForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -111,29 +119,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/Config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="50" column="51" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="51" />
+            <state relative-caret-position="506">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+            <state relative-caret-position="300">
+              <caret line="84" column="21" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="84" selection-end-column="21" />
               <folding>
-                <element signature="e#0#69#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="675">
+              <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/BgContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Pricing/Price.js" />
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/Authentication/Login.js" />
@@ -179,8 +201,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Toaster/ToastEnum.js" />
         <option value="$PROJECT_DIR$/src/components/Toaster/Toast.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Panel.css" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigurationPage.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js" />
         <option value="$PROJECT_DIR$/src/components/Authentication/AccountManagement.js" />
@@ -188,22 +208,30 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/Authentication/LoginForm.js" />
         <option value="$PROJECT_DIR$/src/components/Pricing/PricePage.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/User/UserCog.js" />
         <option value="$PROJECT_DIR$/src/reducers/actions/AccountActions.js" />
         <option value="$PROJECT_DIR$/src/components/Authentication/RegisterForm.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/User/HardwareRegisterForm.js" />
         <option value="$PROJECT_DIR$/src/reducers/AccountReducer.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheatPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/User/UserCogPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionAdministrationPage.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/PanelPage.js" />
         <option value="$PROJECT_DIR$/src/PanelRouter.js" />
-        <option value="$PROJECT_DIR$/src/components/Panel/User/UserCogPage.js" />
-        <option value="$PROJECT_DIR$/src/config/Config.js" />
         <option value="$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheat/UpdateCheatPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTableActionForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Panel.css" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionTimeEnum.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js" />
+        <option value="$PROJECT_DIR$/src/config/Config.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyPage.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyAddForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTable.js" />
+        <option value="$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js" />
       </list>
     </option>
   </component>
@@ -218,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -231,7 +259,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,23 +295,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Panel" type="462c0819:PsiDirectoryNode" />
-              <item name="Administration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Panel" type="462c0819:PsiDirectoryNode" />
-              <item name="Administration" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateCheat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Pricing" type="462c0819:PsiDirectoryNode" />
+              <item name="Subscription" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
@@ -292,16 +303,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="takeurballs-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="takeurballs-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,18 +362,20 @@
       <workItem from="1564214534694" duration="18979000" />
       <workItem from="1564339439676" duration="16028000" />
       <workItem from="1564562838408" duration="20167000" />
-      <workItem from="1564658538119" duration="14864000" />
+      <workItem from="1564658538119" duration="15091000" />
+      <workItem from="1564744083568" duration="578000" />
+      <workItem from="1564939763658" duration="17532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176110000" />
+    <option name="totallyTimeSpent" value="194447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3894967" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18603411" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -383,61 +391,17 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32552955" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32218507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.32675907" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3894967" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32998884" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32552955" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32675907" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/download.png" />
-    <entry file="file://$PROJECT_DIR$/src/components/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BgContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Authentication/LoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -454,9 +418,6 @@
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-recaptcha/dist/react-recaptcha.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -522,16 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="73" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/Breadcrumb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -590,20 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Panel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/ConfigurationPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -658,56 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="76" column="97" selection-start-line="76" selection-start-column="97" selection-end-line="76" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="85" column="95" selection-start-line="85" selection-start-column="95" selection-end-line="85" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="89" column="97" selection-start-line="89" selection-start-column="97" selection-end-line="89" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Authentication/LoginForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1774">
@@ -728,23 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Pricing/PricePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -755,26 +625,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/Config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PanelRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/User/UserCogPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="60">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -784,7 +637,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/User/HardwareRegisterForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
+        <state relative-caret-position="615">
           <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="59" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -792,10 +645,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/AccountReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/actions/AccountActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1665" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/PanelPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="55" column="89" selection-start-line="55" selection-start-column="71" selection-end-line="55" selection-end-column="89" />
+        <state relative-caret-position="540">
+          <caret line="61" column="127" selection-start-line="61" selection-start-column="127" selection-end-line="61" selection-end-column="127" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -804,18 +696,142 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/Download/DownloadPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="45" selection-end-column="21" />
+        <state relative-caret-position="510">
+          <caret line="45" column="21" selection-start-line="40" selection-start-column="20" selection-end-line="45" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Panel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/UpdateCheat/UpdateCheatPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="440">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionTimeEnum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/ConfigEnum.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/TriggerbotConfigurationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/VisualConfigurationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="52" column="58" selection-start-line="52" selection-start-column="58" selection-end-line="52" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/Config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PanelRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTableActionForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/MiscConfigurationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Configuration/AimbotConfigurationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="84" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyAddForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="80" column="133" selection-start-line="80" selection-start-column="133" selection-end-line="80" selection-end-column="133" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Administration/Subscription/SubscriptionKeyTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Panel/Subscription/SubscriptionActivationForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="52" column="112" selection-start-line="52" selection-start-column="112" selection-end-line="52" selection-end-column="112" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

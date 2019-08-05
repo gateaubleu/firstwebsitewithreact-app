@@ -8,7 +8,7 @@ import {
 import axios from 'axios';
 import {API_ROUTES, API_URL} from "../../../config/Config";
 import {TOAST_ENUM} from "../../Toaster/ToastEnum";
-import {VISUAL} from "./ConfigEnum";
+import {ConfigEnum} from "./ConfigEnum";
 
 class VisualConfigurationForm extends React.Component{
     constructor(props){
@@ -32,7 +32,7 @@ class VisualConfigurationForm extends React.Component{
     componentDidMount() {
         const {account} = this.props;
         const {addToast} = this.props;
-        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + VISUAL, {
+        axios.get(API_URL + API_ROUTES['GET_CONFIGURATION'] + ConfigEnum['VISUAL'], {
             headers: {'Authorization': "bearer " + account.token}
         }).then((response) => {
             let data = response.data;
@@ -69,7 +69,7 @@ class VisualConfigurationForm extends React.Component{
         const {addToast} = this.props;
         const {account} = this.props;
 
-        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + VISUAL, {
+        axios.post(API_URL + API_ROUTES['SAVE_CONFIGURATION'] + ConfigEnum['VISUAL'], {
             glow: this.state.visualGlow,
             esp: this.state.visualESP,
             chams: this.state.visualChams,

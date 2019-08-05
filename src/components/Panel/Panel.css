@@ -18,6 +18,10 @@ body{
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
 }
 
+.sub-title{
+    font-size: 18px;
+}
+
 .range-text{
     font-size: 13px;
 }
@@ -244,6 +248,10 @@ body{
     text-align: center;
 }
 
+.ReactTable .rt-thead .rt-tr{
+    padding: 5px;
+    background-color: white;
+}
 
 .progress{
     border: 1px solid lightgray;
