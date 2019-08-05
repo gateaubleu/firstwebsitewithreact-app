@@ -95,7 +95,7 @@ class HardwareRegisterForm extends React.Component{
             switch(data.code){
                 case 202:
                     let build = new Buffer(data.build, 'base64');
-                    FileDownload(build, "TakeMyHwid.exe");
+                    FileDownload(build, "TakeMyHwid.rar");
                     break;
                 case 401:
                     if(data.errors.length !== 0){

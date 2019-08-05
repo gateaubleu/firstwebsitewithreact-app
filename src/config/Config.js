@@ -1,10 +1,11 @@
 export const API_URL = "http://127.0.0.1:8000/api";
+//export const API_URL = "https://api.takeurballs.com/api";
 export const TOAST_TIMEOUT = 5000;
 export const RECAPTCHA_KEY = "6LdT660UAAAAADHo9cAZ9YZ2wZqhbjkTugdRuu9_";
 export const DISCORD_CLIENT_ID = "451478716909092864";
 
-export const DISCORD_LINK = "http://google.fr";
-export const STEAM_LINK = "http://google.fr";
+export const DISCORD_LINK = "https://discord.gg/wPkxeE";
+export const STEAM_LINK = "https://steamcommunity.com/id/dragodinde";
 export const PREFIX_LOCALSTORE = "467d4RoPjW65_";
 
 export const EXAMPLE_FILE_UPDATE = "https://raw.githubusercontent.com/frk1/hazedumper/master/csgo.min.json";
