@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Firstwebsitewithreact-app
 
-## Available Scripts
+Ceci est un projet mis en place pour mettre en avant, présenter et vendre un programme de triche pour un jeu vidéo. Je l'ai avant tout codé afin de mettre en pratique mon apprentissage de la librairie ReactJs couplé à React Redux tout cela alimenté par une API sous le framework Symfony 4. ([Voir l'api](https://github.com/pinkcake/firstwebsitewithreact-api))
 
-In the project directory, you can run:
 
-### `npm start`
+## Liste des fonctionnalités
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  ### Site:
+  - Page d'accueil de présentation
+  - Inscription / Connexion au panel
+  - Mise en avant des prix
+  - Système d'alerte (Toaster)
+  - Déconnexion
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+  ### Panel:
+  - Achat / Activation d'abonnement via système de clé
+  - Configuration du programme mis à disposition
+  - Téléchargement de la version payante / gratuite
+  - Module d'administration (bannissement d'utilisateur, génération de clé d'abonnement, ...)
+  
+  
+## Installation du projet
 
-### `npm test`
+1 - Installer les dépéndances
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2 - Configurer l'app via le fichier Config.js
+```
+src\config\Config.js
+```
 
-### `npm run build`
+3 - Démarrer l'app
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4 - Ouvrir votre navigateur et se rendre sur cette url
+```
+http://localhost:8000
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Déployer l'application
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+npm run build
+```
